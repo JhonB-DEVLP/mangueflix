@@ -48,19 +48,23 @@ class AppBody extends StatelessWidget {
       body: Center(
           child: Container(
               alignment: Alignment.topCenter,
-              padding: EdgeInsets.all(25),
-              child: const TextField(
+              padding: const EdgeInsets.all(40),
+              child: TextField(
+                obscureText: true,
                 decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     filled: true,
-                    fillColor: Color(0xffffffff),
-                    prefixIcon: Icon(Icons.search),
-                    enabledBorder: OutlineInputBorder(
+                    fillColor: const Color(0xffffffff),
+                    prefixIcon: const Icon(Icons.search),
+                    enabledBorder: const OutlineInputBorder(
                         borderSide: BorderSide(
                       color: Colors.red,
                       width: 1.5,
                     )),
                     hintText: 'Search for movies',
-                    focusedBorder: OutlineInputBorder(
+                    focusedBorder: const OutlineInputBorder(
                       borderSide: BorderSide(
                         color: Colors.red,
                         width: 2.5,

@@ -1,4 +1,3 @@
-2024/11/08-22:45:50.162 3c5c Reusing MANIFEST C:\Users\Moraes\AppData\Local\Temp\flutter_tools.9830915a\flutter_tools_chrome_device.a4b8dd5c\Default\Asset Store\assets.db/MANIFEST-000001
-2024/11/08-22:45:50.168 3c5c Recovering log #3
-2024/11/08-22:45:50.168 3c5c (ignoring error) C:\Users\Moraes\AppData\Local\Temp\flutter_tools.9830915a\flutter_tools_chrome_device.a4b8dd5c\Default\Asset Store\assets.db/000003.log: dropping 77917 bytes; Corruption: partial record without end(1)
-2024/11/08-22:45:50.172 3c5c Reusing old log C:\Users\Moraes\AppData\Local\Temp\flutter_tools.9830915a\flutter_tools_chrome_device.a4b8dd5c\Default\Asset Store\assets.db/000003.log 
+2024/11/09-02:20:32.855 ff4 Reusing MANIFEST C:\Users\Moraes\AppData\Local\Temp\flutter_tools.1f1102dd\flutter_tools_chrome_device.a6722063\Default\Asset Store\assets.db/MANIFEST-000001
+2024/11/09-02:20:32.861 ff4 Recovering log #4
+2024/11/09-02:20:32.864 ff4 Reusing old log C:\Users\Moraes\AppData\Local\Temp\flutter_tools.1f1102dd\flutter_tools_chrome_device.a6722063\Default\Asset Store\assets.db/000004.log 
