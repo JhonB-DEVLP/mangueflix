@@ -1,0 +1,8 @@
+{
+   "description": "Microsoft Edge DevTools Enhancements",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxx2oBf3foCCxdn8gQWEGh6HQhGfz+kbpzYJSgAiMy8T6NFVYRfECBK/oZad9hKR317bgpyQlAeaueDu7K2f1NtRKVKA/RCiYUcDp9hyaDmoXn0+ayis97+1Rvl13IGToAqxehQ9T8ZNz4B1uRegJpNHpKA9LCW4uUh6iTC0hMKKTfEXMUVZQ6uQEeXRb+YpB7ZlesFcEZvnbbs2yj4BvjOXWaaxxWTJE0f3hu2dAPgQ4YMp3wluI7eKH475okTdJsdSR4yfcMwx9UHLqp6tUTENAUrb724HWF5yZ+sqAixHJ+TqNxWjGA6L+8zR1kww+OyT7Irh+9400VuQwLtLaswIDAQAB",
+   "manifest_version": 3,
+   "name": "Microsoft Edge DevTools Enhancements",
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "113.0.1765.0"
+}

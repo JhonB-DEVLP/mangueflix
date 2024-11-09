@@ -1,0 +1,5 @@
+2024/11/08-22:34:05.257 2ba0 Creating DB C:\Users\Moraes\AppData\Local\Temp\flutter_tools.9830915a\flutter_tools_chrome_device.a4b8dd5c\Default\Sync Data\LevelDB since it was missing.
+2024/11/08-22:34:08.336 2ba0 Reusing MANIFEST C:\Users\Moraes\AppData\Local\Temp\flutter_tools.9830915a\flutter_tools_chrome_device.a4b8dd5c\Default\Sync Data\LevelDB/MANIFEST-000001
+2024/11/09-00:34:04.194 2ba0 Level-0 table #5: started
+2024/11/09-00:34:04.263 2ba0 Level-0 table #5: 76282 bytes OK
+2024/11/09-00:34:04.302 2ba0 Delete type=0 #3
