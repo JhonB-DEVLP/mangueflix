@@ -1,6 +1,4 @@
-2024/11/09-02:18:33.141 1b8c Reusing MANIFEST C:\Users\Moraes\AppData\Local\Temp\flutter_tools.1f1102dd\flutter_tools_chrome_device.a6722063\Default\Asset Store\assets.db/MANIFEST-000001
-2024/11/09-02:18:33.147 1b8c Recovering log #3
-2024/11/09-02:18:33.148 1b8c (ignoring error) C:\Users\Moraes\AppData\Local\Temp\flutter_tools.1f1102dd\flutter_tools_chrome_device.a6722063\Default\Asset Store\assets.db/000003.log: dropping 77917 bytes; Corruption: partial record without end(1)
-2024/11/09-02:18:33.150 1b8c Level-0 table #3: started
-2024/11/09-02:18:33.289 1b8c Level-0 table #3: 537958 bytes OK
-2024/11/09-02:18:33.358 1b8c Delete type=0 #3
+2024/11/11-00:56:47.953 3a30 Reusing MANIFEST C:\Users\Moraes\AppData\Local\Temp\flutter_tools.6a56a2ed\flutter_tools_chrome_device.69b5a7d\Default\Asset Store\assets.db/MANIFEST-000001
+2024/11/11-00:56:48.002 3a30 Recovering log #4
+2024/11/11-00:56:48.007 3a30 Reusing old log C:\Users\Moraes\AppData\Local\Temp\flutter_tools.6a56a2ed\flutter_tools_chrome_device.69b5a7d\Default\Asset Store\assets.db/000004.log 
+2024/11/11-00:56:48.009 3a30 Delete type=0 #3

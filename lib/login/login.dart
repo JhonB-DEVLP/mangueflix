@@ -12,9 +12,8 @@ class Login extends StatefulWidget {
 class _MyStatefulWidgetState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Login",
-      home: Scaffold(
+    return Scaffold(
+      body: Scaffold(
           backgroundColor: const Color(0xFFF1ECD6),
           body: Container(
               padding: const EdgeInsets.all(10),

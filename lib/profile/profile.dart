@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/colors/colors.dart';
+import 'package:mangueflix/profile/bio.dart';
+import 'package:mangueflix/profile/infos.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -27,36 +29,19 @@ class Profile extends StatelessWidget {
             },
             icon: const Icon(Icons.arrow_back, color: Colors.red)),
       ),
-      body: Column(
-        children: [
-          Card(
-            elevation: 0,
-            color: Colors.transparent,
-            child: ListTile(
-              leading: Image.asset('assets/image/fotoFlutter.png'),
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Text(
-                    "Gabriel Henrique",
-                    style: TextStyle(
-                      color: titulo,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  IconButton(
-                    icon: const Icon(
-                      Icons.camera_alt,
-                      size: 30,
-                    ),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            ),
-          )
-        ],
+      body: Container(
+        margin: const EdgeInsets.all(15),
+        child: ListView(
+          children: const [
+            Infos(),
+            Padding(
+                padding: EdgeInsets.only(
+              top: 30,
+              bottom: 30,
+            )),
+            Bio(),
+          ],
+        ),
       ),
     );
   }
