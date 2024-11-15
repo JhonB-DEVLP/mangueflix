@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/appbody.dart';
+import 'package:mangueflix/colors/colors.dart';
 import 'package:mangueflix/login/cadastro.dart';
 
 class Login extends StatefulWidget {
@@ -53,7 +54,7 @@ class _MyStatefulWidgetState extends State<Login> {
                       child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
-                              WidgetStateProperty.all<Color>(Colors.red),
+                              WidgetStateProperty.all<Color>(vermelho),
                           shape:
                               WidgetStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
@@ -85,7 +86,7 @@ class _MyStatefulWidgetState extends State<Login> {
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
-                            color: Colors.red,
+                            color: vermelho,
                           ),
                         ),
                         onPressed: () {

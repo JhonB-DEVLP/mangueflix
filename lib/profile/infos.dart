@@ -20,7 +20,7 @@ class Infos extends StatelessWidget {
                   const Text(
                     "Gabriel Henrique",
                     style: TextStyle(
-                      color: titulo,
+                      color: vinho,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),

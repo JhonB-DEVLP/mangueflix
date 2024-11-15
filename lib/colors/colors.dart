@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
 const Color fundo = Color(0xFFf1ecd6);
-const Color butao = Colors.red;
+const Color vermelho = Color(0xFFE40624);
 
-const Color titulo = Color(0xFF691C3A);
+const Color vinho = Color(0xFF691C3A);

@@ -57,16 +57,19 @@ class AppBody extends StatelessWidget {
                     ),
                     filled: true,
                     fillColor: const Color(0xffffffff),
-                    prefixIcon: const Icon(Icons.search),
+                    prefixIcon: const Icon(
+                        Icons.search,
+                        color: vermelho, 
+                      ),
                     enabledBorder: const OutlineInputBorder(
                         borderSide: BorderSide(
-                      color: Colors.red,
+                      color: vermelho,
                       width: 1.5,
                     )),
-                    hintText: 'Search for movies',
+                    hintText: 'Pesquise Séries',
                     focusedBorder: const OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.red,
+                        color: vermelho,
                         width: 2.5,
                       ),
                     )),
