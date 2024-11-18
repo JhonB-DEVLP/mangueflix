@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/login/login.dart';
+import 'package:mangueflix/detalhes/detalhes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mangueflix/profile/profile.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         // '/myseries': (context) => const MySeries(),
         // '/about': (context) => const About(),
         //'/minhaConta': (context) => const MinhaConta()
+        '/detalhes': (context) => const Detalhes(),
       },
     );
   }

@@ -70,13 +70,13 @@
    }, {
       "appName": "reading_view",
       "data": {
-         "blockList": [ "gisdvl-jrvoice2.jreast.co.jp", "jrvoice2.jreast.co.jp", "www.marriott.com", "www.eki-net.com", "service10.wanbishi.ne.jp" ],
+         "blockList": [ "gisdvl-jrvoice2.jreast.co.jp", "jrvoice2.jreast.co.jp", "www.marriott.com", "www.eki-net.com", "service10.wanbishi.ne.jp", "eum-coral-saas.instana.io" ],
          "textLengthThreshold": 40,
          "whiteList": [ "mip.shengxuxu.com" ]
       },
       "effectStrategy": "launch",
       "type": "normal",
-      "version": "1003"
+      "version": "1004"
    }, {
       "appId": "e54758ece3475afa1b2a65wsefd0db36",
       "appName": "ads_block",
@@ -318,6 +318,15 @@
       "instanceId": "1bc1928c024e49f4944d0b9ad549e46a",
       "type": "normal",
       "version": "1002"
+   }, {
+      "appName": "UAShimmingiOS",
+      "data": {
+         "chromelist": [ "identitypass.microsoft.com" ],
+         "safarilist": [  ]
+      },
+      "effectStrategy": "realtime",
+      "type": "builtin",
+      "version": "1001"
    } ],
-   "version": "202410310001"
+   "version": "202411140001"
 }

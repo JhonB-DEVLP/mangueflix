@@ -573,7 +573,7 @@
          "enabled|flight:msEdgeHubAppOutlookAutoOpenOff": false,
          "enabled|flight:msEdgeHubAppsAutoOpenOutlookV2": false,
          "fre_notification": {
-            "enabled": true,
+            "enabled": false,
             "header": "Abrimos o Outlook para mostrar seu email lado a lado com o link que você abriu",
             "show_count": 3,
             "text": "Abrimos o Outlook para mostrar seu email lado a lado com o link que você abriu"
@@ -631,9 +631,9 @@
       "description": "Verifique o email enquanto permanece no seu fluxo",
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_dark.png/1.12.14/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_hc.png/1.12.14/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_light.png/1.12.14/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_dark.png/1.12.15/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_hc.png/1.12.15/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_light.png/1.12.15/asset"
          }
       },
       "id": "8682d0fa-50b3-4ece-aa5b-e0b33f9919e2",
@@ -658,7 +658,7 @@
       },
       "trusted_domains": [ "live.com", "office.com", "microsoftonline.com", "microsoft.com", "office365.com" ],
       "trusted_types": [ "default", "dompurify" ],
-      "version": "1.12.14"
+      "version": "1.12.15"
    }, {
       "capabilities|flight:msDesignerSinglePrompt": {
          "enable_force_dark_mode": true
@@ -1337,7 +1337,7 @@
          "enabled|flight:msEdgeAutoOpenTeamsHubAppV2": false,
          "enabled|flight:msEdgeHubAppTeamsAutoOpenOff": false,
          "fre_notification": {
-            "enabled": true,
+            "enabled": false,
             "header": "Abrimos o Teams para mostrar seu chat lado a lado com o link que você abriu",
             "show_count": 3,
             "text": "Abrimos o Teams para mostrar seu chat lado a lado com o link que você abriu"
@@ -1368,9 +1368,9 @@
       },
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_dark.png/1.5.12/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_hc.png/1.5.12/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_light.png/1.5.12/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_dark.png/1.5.13/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_hc.png/1.5.13/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_light.png/1.5.13/asset"
          }
       },
       "id": "bc25fcef-8964-4e72-8287-23e2b496c128",
@@ -1389,7 +1389,7 @@
       "target": {
          "url": "https://teams.microsoft.com/embed-client/chats/list?layout=singlePane&hostCtx=edge"
       },
-      "version": "1.5.12"
+      "version": "1.5.13"
    }, {
       "capabilities": {
          "show_domain_in_header": true

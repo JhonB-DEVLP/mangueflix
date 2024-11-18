@@ -3,6 +3,7 @@ import 'package:mangueflix/appbody.dart';
 import 'package:mangueflix/colors/colors.dart';
 import 'package:mangueflix/login/cadastro.dart';
 
+
 class Login extends StatefulWidget {
   const Login({super.key});
 
@@ -99,6 +100,7 @@ class _MyStatefulWidgetState extends State<Login> {
                       )
                     ],
                   ),
+                  
                 ],
               ))),
     );

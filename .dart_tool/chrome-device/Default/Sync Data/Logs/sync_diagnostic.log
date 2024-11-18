@@ -503,3 +503,115 @@
 2024-11-11T03:56:05.672Z P:15824 T:16156] SyncEngineBackend::DoStartSyncing,Start syncing
 2024-11-11T04:00:58.499Z P:15824 T:2176] SyncServiceImpl::ResetEngine,Reset engine with reason: 0
 2024-11-11T04:00:58.499Z P:15824 T:2176] SyncServiceImpl::ResetEngine,Reset engine with reason: 0
+2024-11-18 04:09:05.122: [INFO][Sync] SyncState after authenticated was: FeatureNotRequestedNotSetup
+2024-11-18 04:09:09.267: [INFO][Sync] Try to start sync engine
+2024-11-18 04:09:10.604: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2024-11-18 04:09:10.604: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2024-11-18 04:09:10.604: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2024-11-18 04:09:10.622: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2024-11-18 04:09:10.648: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2024-11-18 04:09:14.875: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:09:14.875: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:09:14.876: [WARN][Sync]    Token is empty
+2024-11-18 04:09:14.895: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:09:19.277: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:09:19.277: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:09:19.277: [WARN][Sync]    Token is empty
+2024-11-18 04:09:19.278: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:09:22.402: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:09:22.402: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:09:22.402: [WARN][Sync]    Token is empty
+2024-11-18 04:09:22.403: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:09:27.783: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:09:27.784: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:09:27.784: [WARN][Sync]    Token is empty
+2024-11-18 04:09:27.785: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:09:35.257: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:09:35.257: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:09:35.257: [WARN][Sync]    Token is empty
+2024-11-18 04:09:35.264: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:09:52.400: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:09:52.401: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:09:52.401: [WARN][Sync]    Token is empty
+2024-11-18 04:09:52.402: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:10:19.821: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:10:19.821: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:10:19.821: [WARN][Sync]    Token is empty
+2024-11-18 04:10:19.824: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:11:15.009: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:11:15.009: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:11:15.009: [WARN][Sync]    Token is empty
+2024-11-18 04:11:15.010: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:13:03.344: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:13:03.345: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:13:03.345: [WARN][Sync]    Token is empty
+2024-11-18 04:13:03.352: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:16:38.876: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:16:38.876: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:16:38.877: [WARN][Sync]    Token is empty
+2024-11-18 04:16:38.891: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:24:03.678: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:24:03.767: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:24:03.771: [WARN][Sync]    Token is empty
+2024-11-18 04:24:04.456: [INFO][Sync] Connection status changed to: 2
+2024-11-18 04:39:29.709: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 04:39:29.711: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 04:39:29.712: [WARN][Sync]    Token is empty
+2024-11-18 04:39:29.728: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:12:32.602: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:12:32.604: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:12:32.604: [WARN][Sync]    Token is empty
+2024-11-18 05:12:32.669: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:15:24.481: [INFO][Sync] Reset engine, reason: 0
+2024-11-18 05:15:24.485: [INFO][Sync] Reset engine with reason: 0
+2024-11-18 05:20:14.195: [INFO][Sync] SyncState after authenticated was: FeatureNotRequestedNotSetup
+2024-11-18 05:20:16.214: [INFO][Sync] Try to start sync engine
+2024-11-18 05:20:16.357: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2024-11-18 05:20:16.357: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2024-11-18 05:20:16.357: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2024-11-18 05:20:16.357: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2024-11-18 05:20:16.359: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2024-11-18 05:20:20.373: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:20:20.373: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:20:20.373: [WARN][Sync]    Token is empty
+2024-11-18 05:20:20.376: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:20:20.836: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:20:20.836: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:20:20.836: [WARN][Sync]    Token is empty
+2024-11-18 05:20:20.837: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:20:23.079: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:20:23.079: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:20:23.079: [WARN][Sync]    Token is empty
+2024-11-18 05:20:23.086: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:20:26.736: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:20:26.736: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:20:26.736: [WARN][Sync]    Token is empty
+2024-11-18 05:20:26.738: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:20:34.523: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:20:34.523: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:20:34.523: [WARN][Sync]    Token is empty
+2024-11-18 05:20:34.524: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:20:49.589: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:20:49.589: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:20:49.589: [WARN][Sync]    Token is empty
+2024-11-18 05:20:49.590: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:21:18.312: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:21:18.312: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:21:18.312: [WARN][Sync]    Token is empty
+2024-11-18 05:21:18.313: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:22:11.715: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:22:11.715: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:22:11.715: [WARN][Sync]    Token is empty
+2024-11-18 05:22:11.721: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:24:16.686: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:24:16.687: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:24:16.687: [WARN][Sync]    Token is empty
+2024-11-18 05:24:16.697: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:28:26.476: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:28:26.477: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:28:26.478: [WARN][Sync]    Token is empty
+2024-11-18 05:28:26.498: [INFO][Sync] Connection status changed to: 2
+2024-11-18 05:35:44.528: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: EDGE_AUTH_ERROR: 6, 2, 0 for account type: MSA
+2024-11-18 05:35:44.529: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2024-11-18 05:35:44.530: [WARN][Sync]    Token is empty
+2024-11-18 05:35:44.554: [INFO][Sync] Connection status changed to: 2
