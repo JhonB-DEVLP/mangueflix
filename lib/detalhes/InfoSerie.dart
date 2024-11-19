@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -14,8 +13,8 @@ class InfoSerie extends StatefulWidget {
 }
 
 class _InfoSerieState extends State<InfoSerie> {
-  final String _apiKey = dotenv.env['API_KEY'] ?? '';
-  final String _baseUrl = dotenv.env['BASE_URL'] ?? '';
+  final String _apiKey = 'c00a752167d66ef3527fa00e1d21fc20'; 
+  final String _baseUrl = 'https://api.themoviedb.org/3'; 
   Map<String, dynamic>? _serieData;
   bool _isLoading = true;
   bool _isFavorite = false; // Estado do favorito

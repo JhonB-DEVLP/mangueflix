@@ -4,10 +4,8 @@ import 'package:mangueflix/detalhes/detalhes.dart';
 import 'package:mangueflix/myseries/myseries.dart';
 import 'package:mangueflix/profile/profile.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
-  await dotenv.load();
   runApp(const MyApp());
 }
 

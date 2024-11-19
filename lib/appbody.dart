@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -16,8 +15,8 @@ class AppBody extends StatefulWidget {
 }
 
 class _AppBodyState extends State<AppBody> {
-  final String _apiKey = dotenv.env['API_KEY'] ?? ''; // variavel de ambiente que botei
-  final String _baseUrl = dotenv.env['BASE_URL'] ?? ''; // variavel de ambiente que botei
+  final String _apiKey = 'c00a752167d66ef3527fa00e1d21fc20'; 
+  final String _baseUrl = 'https://api.themoviedb.org/3'; 
   List<dynamic> _series = [];
   bool _isLoading = true;
 
