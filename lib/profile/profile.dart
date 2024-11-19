@@ -29,9 +29,7 @@ class Profile extends StatelessWidget {
             },
             icon: const Icon(Icons.arrow_back, color: Colors.red)),
       ),
-      body: Container(
-        margin: const EdgeInsets.all(15),
-        child: ListView(
+      body: ListView(
           children: const [
             Infos(),
             Padding(
@@ -42,7 +40,7 @@ class Profile extends StatelessWidget {
             Bio(),
           ],
         ),
-      ),
+      
     );
   }
 }

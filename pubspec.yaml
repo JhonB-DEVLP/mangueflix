@@ -9,13 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.2.1
   flutter_svg: ^2.0.14
   google_fonts: ^6.2.1
+  http: ^1.2.2
+  shared_preferences: ^2.3.3
     
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.2
+  flutter_lints: ^5.0.0
 
 flutter:
   uses-material-design: true

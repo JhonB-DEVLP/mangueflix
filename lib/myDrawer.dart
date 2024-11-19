@@ -23,7 +23,7 @@ class MyDrawer extends StatelessWidget {
               },
             ),
           ),
-          
+
           // Item: Popular (com fundo branco)
           _buildDrawerItem(
             context,
@@ -44,7 +44,9 @@ class MyDrawer extends StatelessWidget {
             iconColor: Colors.white,
             textColor: Colors.white,
             onTap: () {
-              print("Minhas Séries selecionado");
+              Navigator.pop(context); // Fecha o Drawer
+              Navigator.pushNamed(
+                  context, '/myseries'); // Navega para as séries favoritas
             },
           ),
           // Item: Perfil
@@ -90,7 +92,7 @@ class MyDrawer extends StatelessWidget {
               print("Problema Reportado");
             },
           ),
-          
+
           // Item: Sair (removendo o Container que dá o destaque)
           _buildDrawerItem(
             context,

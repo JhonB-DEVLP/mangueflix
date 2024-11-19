@@ -81,8 +81,8 @@ class _MyStatefulWidgetState extends State<Cadastro> {
                 margin: const EdgeInsets.only(top: 35),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(butao), // Usando a variável 'butao'
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    backgroundColor: WidgetStateProperty.all<Color>(butao), // Usando a variável 'butao'
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),

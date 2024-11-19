@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mangueflix/colors/colors.dart';
 
 class Comentarios extends StatelessWidget {
-  const Comentarios({Key? key}) : super(key: key);
+  const Comentarios({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Comentarios extends StatelessWidget {
             color: vinho,
           ),
         ),
-        SizedBox(height: 8),
+        SizedBox(height: 16),
         ComentarioWidget(
           username: 'Fábio Maciel',
           comment:
@@ -40,36 +40,45 @@ class ComentarioWidget extends StatelessWidget {
   final int rating;
 
   const ComentarioWidget({
-    Key? key,
+    super.key,
     required this.username,
     required this.comment,
     required this.rating,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          username,
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            color: vinho,
-          ),
+    return Card(
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
+      elevation: 4,
+      color: const Color(0xFFF5F5F5),
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              username,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                color: vinho,
+              ),
+            ),
+            Row(
+              children: List.generate(
+                rating,
+                (index) => const Icon(Icons.star, color: vermelho, size: 16),
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              comment,
+              style: const TextStyle(fontSize: 14, color: vinho),
+            ),
+          ],
         ),
-        Row(
-          children: List.generate(
-            rating,
-            (index) => const Icon(Icons.star, color: vermelho, size: 16),
-          ),
-        ),
-        Text(
-          comment,
-          style: const TextStyle(color: vinho),
-        ),
-        const SizedBox(height: 8),
-      ],
+      ),
     );
   }
 }

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/colors/colors.dart';
-import 'infoSerie.dart';
-import 'comentarios.dart';
+import './InfoSerie.dart';
+import './comentarios.dart';
 
 class Detalhes extends StatelessWidget {
-  const Detalhes({Key? key}) : super(key: key);
+  final int serieId; // ID da série passado ao componente InfoSerie
+
+  const Detalhes({super.key, required this.serieId});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class Detalhes extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: CircleAvatar(
-              backgroundImage: AssetImage('assets/image/fotoFlutter.png'),
+              backgroundImage: const AssetImage('assets/image/fotoFlutter.png'),
             ),
           ),
         ],
@@ -31,10 +33,10 @@ class Detalhes extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              InfoSerie(), 
-              Divider(color: vermelho),
-              Comentarios(), 
+            children: [
+              InfoSerie(serieId: serieId), // Passa o ID da série
+              const Divider(color: vermelho, thickness: 2),
+              const Comentarios(),
             ],
           ),
         ),

@@ -1,9 +1,3 @@
-2024/11/18-01:09:05.766 1670 Reusing MANIFEST C:\Users\55819\AppData\Local\Temp\flutter_tools.aff859a2\flutter_tools_chrome_device.dc08ca1e\Default\Site Characteristics Database/MANIFEST-000001
-2024/11/18-01:09:05.770 1670 Compacting 4@0 + 0@1 files
-2024/11/18-01:09:05.779 1670 Generated table #11@0: 2 keys, 197 bytes
-2024/11/18-01:09:05.779 1670 Compacted 4@0 + 0@1 files => 197 bytes
-2024/11/18-01:09:05.782 1670 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/18-01:09:05.783 1670 Delete type=2 #4
-2024/11/18-01:09:05.783 1670 Delete type=2 #6
-2024/11/18-01:09:05.784 1670 Delete type=2 #7
-2024/11/18-01:09:05.784 1670 Delete type=2 #8
+2024/11/19-18:35:09.621 2694 Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.37e97f65\flutter_tools_chrome_device.5f382747\Default\Site Characteristics Database/MANIFEST-000001
+2024/11/19-18:35:09.623 2694 Recovering log #3
+2024/11/19-18:35:09.624 2694 Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.37e97f65\flutter_tools_chrome_device.5f382747\Default\Site Characteristics Database/000003.log 

@@ -1,4 +1,0 @@
-third_party\babylon\LICENSE.md
-third_party\babylon\babylon.js
-third_party\typescript\LICENSE.txt
-third_party\typescript\typescript.js

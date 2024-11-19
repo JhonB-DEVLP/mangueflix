@@ -6,8 +6,7 @@ class Bio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -34,7 +33,7 @@ class Bio extends StatelessWidget {
                 ),
               ),
             ),
-          ]),
+          ],
     );
   }
 }
