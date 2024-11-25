@@ -13,7 +13,7 @@ class FilteredComedia extends StatefulWidget {
 class FilteredComediaState extends State<FilteredComedia> {
   final String _apiKey = 'c00a752167d66ef3527fa00e1d21fc20';
   final String _baseUrl = 'https://api.themoviedb.org/3';
-  List<dynamic> _tendencias = [];
+  List<dynamic> _comedia = [];
   bool _isLoading = true;
 
   @override
@@ -25,14 +25,14 @@ class FilteredComediaState extends State<FilteredComedia> {
   Future<void> fetchFilteredComedia() async {
     try {
       final response = await http.get(Uri.parse(
-          '$_baseUrl/discover/movie?api_key=$_apiKey&language=pt-BR&with_genres=35'));
+          '$_baseUrl/discover/tv?api_key=$_apiKey&language=pt-BR&with_genres=35'));
       if (response.statusCode == 200) {
         setState(() {
-          _tendencias = json.decode(response.body)['results'];
+          _comedia = json.decode(response.body)['results'];
           _isLoading = false;
         });
       } else {
-        throw Exception('Erro ao buscar filmes de comédia');
+        throw Exception('Erro ao buscar séries de comédia');
       }
     } catch (e) {
       print('Erro: $e');
@@ -49,7 +49,7 @@ class FilteredComediaState extends State<FilteredComedia> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Filmes de Comédia',
+                'Séries de Comédia',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -59,21 +59,23 @@ class FilteredComediaState extends State<FilteredComedia> {
             ],
           ),
         ),
-        Expanded(
+        const SizedBox(height: 16),
+        SizedBox(
+          height: 250, // Ajuste a altura conforme necessário
           child: _isLoading
               ? const Center(child: CircularProgressIndicator())
               : ListView.builder(
                   scrollDirection: Axis.horizontal, // Carrossel horizontal
-                  itemCount: _tendencias.length,
+                  itemCount: _comedia.length,
                   itemBuilder: (context, index) {
-                    final tendencia = _tendencias[index];
+                    final comedia = _comedia[index];
                     return GestureDetector(
                       onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) =>
-                                InfoSerie(serieId: tendencia['id']),
+                                InfoSerie(serieId: comedia['id']),
                           ),
                         );
                       },
@@ -84,7 +86,7 @@ class FilteredComediaState extends State<FilteredComedia> {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(12),
                               child: Image.network(
-                                'https://image.tmdb.org/t/p/w200${tendencia['poster_path']}',
+                                'https://image.tmdb.org/t/p/w200${comedia['poster_path']}',
                                 width: 100,
                                 height: 150,
                                 fit: BoxFit.cover,
@@ -92,9 +94,9 @@ class FilteredComediaState extends State<FilteredComedia> {
                             ),
                             const SizedBox(height: 5),
                             Text(
-                              tendencia['title'].length > 15
-                                  ? '${tendencia['title'].substring(0, 15)}...'
-                                  : tendencia['title'],
+                              comedia['name'].length > 15
+                                  ? '${comedia['name'].substring(0, 15)}...'
+                                  : comedia['name'],
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,

@@ -56,16 +56,12 @@ class _TendenciasState extends State<Tendencias> {
                   color: Colors.black,
                 ),
               ),
-              IconButton(
-                icon: Icon(Icons.filter_list),
-                onPressed: () {
-                  // Lógica para filtrar as séries
-                },
-              ),
             ],
           ),
         ),
-        Expanded(
+        const SizedBox(height: 16), // Espaçamento entre o título e as imagens
+        SizedBox(
+          height: 250,
           child: _isLoading
               ? const Center(child: CircularProgressIndicator())
               : ListView.builder(

@@ -13,26 +13,26 @@ class FilteredRomance extends StatefulWidget {
 class FilteredRomanceState extends State<FilteredRomance> {
   final String _apiKey = 'c00a752167d66ef3527fa00e1d21fc20';
   final String _baseUrl = 'https://api.themoviedb.org/3';
-  List<dynamic> _Romance = [];
+  List<dynamic> _romanceSeries = [];
   bool _isLoading = true;
 
   @override
   void initState() {
     super.initState();
-    fetchFilteredRomance();
+    fetchFilteredRomanceSeries();
   }
 
-  Future<void> fetchFilteredRomance() async {
+  Future<void> fetchFilteredRomanceSeries() async {
     try {
       final response = await http.get(Uri.parse(
-          '$_baseUrl/discover/movie?api_key=$_apiKey&language=pt-BR&with_genres=10749'));
+          '$_baseUrl/discover/tv?api_key=$_apiKey&language=pt-BR&with_genres=10749'));
       if (response.statusCode == 200) {
         setState(() {
-          _Romance = json.decode(response.body)['results'];
+          _romanceSeries = json.decode(response.body)['results'];
           _isLoading = false;
         });
       } else {
-        throw Exception('Erro ao buscar filmes de comédia');
+        throw Exception('Erro ao buscar séries de romance');
       }
     } catch (e) {
       print('Erro: $e');
@@ -49,7 +49,7 @@ class FilteredRomanceState extends State<FilteredRomance> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Filmes de Romance',
+                'Séries de Romance',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -59,21 +59,23 @@ class FilteredRomanceState extends State<FilteredRomance> {
             ],
           ),
         ),
-        Expanded(
+        const SizedBox(height: 16),
+        SizedBox(
+          height: 250, // Ajuste a altura conforme necessário
           child: _isLoading
               ? const Center(child: CircularProgressIndicator())
               : ListView.builder(
                   scrollDirection: Axis.horizontal, // Carrossel horizontal
-                  itemCount: _Romance.length,
+                  itemCount: _romanceSeries.length,
                   itemBuilder: (context, index) {
-                    final romance = _Romance[index];
+                    final series = _romanceSeries[index];
                     return GestureDetector(
                       onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) =>
-                                InfoSerie(serieId: romance['id']),
+                                InfoSerie(serieId: series['id']),
                           ),
                         );
                       },
@@ -84,7 +86,7 @@ class FilteredRomanceState extends State<FilteredRomance> {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(12),
                               child: Image.network(
-                                'https://image.tmdb.org/t/p/w200${romance['poster_path']}',
+                                'https://image.tmdb.org/t/p/w200${series['poster_path']}',
                                 width: 100,
                                 height: 150,
                                 fit: BoxFit.cover,
@@ -92,9 +94,9 @@ class FilteredRomanceState extends State<FilteredRomance> {
                             ),
                             const SizedBox(height: 5),
                             Text(
-                              romance['title'].length > 15
-                                  ? '${romance['title'].substring(0, 15)}...'
-                                  : romance['title'],
+                              series['name'].length > 15
+                                  ? '${series['name'].substring(0, 15)}...'
+                                  : series['name'],
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
