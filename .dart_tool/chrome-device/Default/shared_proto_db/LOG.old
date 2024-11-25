@@ -1,3 +1,5 @@
-2024/11/19-18:58:43.407 d78 Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.7764d0f1\flutter_tools_chrome_device.c53dc26e\Default\shared_proto_db/MANIFEST-000001
-2024/11/19-18:58:43.408 d78 Recovering log #3
-2024/11/19-18:58:43.409 d78 Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.7764d0f1\flutter_tools_chrome_device.c53dc26e\Default\shared_proto_db/000003.log 
+2024/11/25-09:44:28.906 298a Reusing MANIFEST /tmp/flutter_tools.GRSEDJ/flutter_tools_chrome_device.QMPRYW/Default/shared_proto_db/MANIFEST-000001
+2024/11/25-09:44:28.906 298a Recovering log #7
+2024/11/25-09:44:28.906 298a Reusing old log /tmp/flutter_tools.GRSEDJ/flutter_tools_chrome_device.QMPRYW/Default/shared_proto_db/000007.log 
+2024/11/25-09:44:28.906 298a Delete type=0 #3
+2024/11/25-09:44:28.907 298a Delete type=0 #4
