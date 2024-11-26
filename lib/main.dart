@@ -3,6 +3,7 @@ import 'package:mangueflix/login/login.dart';
 import 'package:mangueflix/detalhes/detalhes.dart';
 import 'package:mangueflix/myseries/myseries.dart';
 import 'package:mangueflix/profile/profile.dart';
+import 'package:mangueflix/about/about.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         '/detalhes': (context) => Detalhes(
             serieId: ModalRoute.of(context)?.settings.arguments as int),
         '/myseries': (context) => const MySeries(),
+        '/about': (context) => const About(),
       },
     );
   }
