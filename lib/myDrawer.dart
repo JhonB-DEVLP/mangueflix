@@ -49,17 +49,6 @@ class MyDrawer extends StatelessWidget {
                   context, '/myseries'); // Navega para as séries favoritas
             },
           ),
-          // Item: Perfil
-          _buildDrawerItem(
-            context,
-            icon: Icons.person,
-            label: "Perfil",
-            iconColor: Colors.white,
-            textColor: Colors.white,
-            onTap: () {
-              print("Perfil selecionado");
-            },
-          ),
           // Item: Sobre o MangueFlix
           _buildDrawerItemWithSvg(
             context,

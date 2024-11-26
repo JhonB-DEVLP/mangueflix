@@ -1,3 +1,9 @@
-2024/11/25-15:20:27.777 971e Reusing MANIFEST /tmp/flutter_tools.FQDJBW/flutter_tools_chrome_device.GIINTI/Default/shared_proto_db/metadata/MANIFEST-000001
-2024/11/25-15:20:27.777 971e Recovering log #3
-2024/11/25-15:20:27.778 971e Reusing old log /tmp/flutter_tools.FQDJBW/flutter_tools_chrome_device.GIINTI/Default/shared_proto_db/metadata/000003.log 
+<<<<<<< HEAD
+2024/11/25-15:25:19.694 a0ce Reusing MANIFEST /tmp/flutter_tools.UWJTHJ/flutter_tools_chrome_device.KMEASB/Default/shared_proto_db/metadata/MANIFEST-000001
+2024/11/25-15:25:19.694 a0ce Recovering log #3
+2024/11/25-15:25:19.694 a0ce Reusing old log /tmp/flutter_tools.UWJTHJ/flutter_tools_chrome_device.KMEASB/Default/shared_proto_db/metadata/000003.log 
+=======
+2024/11/25-18:35:12.174 402c Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.dec6f5e\flutter_tools_chrome_device.3ca79808\Default\shared_proto_db\metadata/MANIFEST-000001
+2024/11/25-18:35:12.174 402c Recovering log #3
+2024/11/25-18:35:12.175 402c Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.dec6f5e\flutter_tools_chrome_device.3ca79808\Default\shared_proto_db\metadata/000003.log 
+>>>>>>> 4a9a79496707591f9e93cf3f2f0cc1fbd140ccc7

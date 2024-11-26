@@ -1,3 +1,9 @@
-2024/11/25-15:20:27.948 971f Reusing MANIFEST /tmp/flutter_tools.FQDJBW/flutter_tools_chrome_device.GIINTI/Default/Extension State/MANIFEST-000001
-2024/11/25-15:20:27.948 971f Recovering log #3
-2024/11/25-15:20:27.948 971f Reusing old log /tmp/flutter_tools.FQDJBW/flutter_tools_chrome_device.GIINTI/Default/Extension State/000003.log 
+<<<<<<< HEAD
+2024/11/25-15:25:20.339 a0dd Reusing MANIFEST /tmp/flutter_tools.UWJTHJ/flutter_tools_chrome_device.KMEASB/Default/Extension State/MANIFEST-000001
+2024/11/25-15:25:20.339 a0dd Recovering log #3
+2024/11/25-15:25:20.339 a0dd Reusing old log /tmp/flutter_tools.UWJTHJ/flutter_tools_chrome_device.KMEASB/Default/Extension State/000003.log 
+=======
+2024/11/25-18:35:12.189 35bc Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.dec6f5e\flutter_tools_chrome_device.3ca79808\Default\Extension State/MANIFEST-000001
+2024/11/25-18:35:12.189 35bc Recovering log #3
+2024/11/25-18:35:12.190 35bc Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.dec6f5e\flutter_tools_chrome_device.3ca79808\Default\Extension State/000003.log 
+>>>>>>> 4a9a79496707591f9e93cf3f2f0cc1fbd140ccc7

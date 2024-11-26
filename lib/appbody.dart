@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/myDrawer.dart';
 import 'package:mangueflix/colors/colors.dart';
-import 'package:mangueflix/profile/profile.dart';
-import 'home/homePage.dart'; // Supondo que a página Home esteja no arquivo home.dart
+import './customappbar.dart';
+import 'home/homePage.dart';
 
 class AppBody extends StatefulWidget {
   const AppBody({super.key});
@@ -16,37 +16,9 @@ class _AppBodyState extends State<AppBody> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: fundo,
-      drawer: const MyDrawer(),
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        title: Center(
-          child: IconButton(
-            icon: Image.asset('assets/image/mangueFlix.png'),
-            iconSize: 50,
-            onPressed: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => const AppBody()),
-              );
-            },
-          ),
-        ),
-        actions: [
-          IconButton(
-            icon: Image.asset('assets/image/fotoFlutter.png'),
-            iconSize: 50,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Profile(),
-                ),
-              );
-            },
-          )
-        ],
-      ),
-      body: const Home(), // Chamando a página Home no body
+      drawer: const MyDrawer(), // Drawer permanece apenas na página inicial
+      appBar: const CustomAppBar(showBackButton: false, actions: [],), // Usa o CustomAppBar sem o botão de voltar
+      body: const Home(), // Página inicial (Home)
     );
   }
 }
