@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/colors/colors.dart';
 import 'package:mangueflix/profile/bio.dart';
+import 'package:mangueflix/profile/histAval.dart';
 import 'package:mangueflix/profile/infos.dart';
 
 class Profile extends StatelessWidget {
@@ -38,6 +39,7 @@ class Profile extends StatelessWidget {
               bottom: 30,
             )),
             Bio(),
+            HistAval(),
           ],
         ),
       

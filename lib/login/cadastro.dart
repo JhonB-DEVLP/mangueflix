@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mangueflix/login/login.dart';
+import 'package:mangueflix/database/cadastro.dart'; // Importe a função de cadastro
+import 'package:mangueflix/login/login.dart'; // Para redirecionar após o cadastro
 
 const Color fundo = Color(0xFFf1ecd6);
 const Color butao = Color(0xFFE40624);
@@ -13,6 +14,60 @@ class Cadastro extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<Cadastro> {
+  // Controladores de texto para os campos de entrada
+  final TextEditingController _nomeController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _senhaController = TextEditingController();
+  final TextEditingController _confirmarSenhaController = TextEditingController();
+
+  // Função de cadastro
+  void _cadastrar() async {
+    final nome = _nomeController.text;
+    final email = _emailController.text;
+    final senha = _senhaController.text;
+    final confirmarSenha = _confirmarSenhaController.text;
+
+    // Validação de senha
+    if (senha != confirmarSenha) {
+      _showDialog('Erro', 'As senhas não correspondem!');
+      return;
+    }
+
+    // Chama a função de cadastro do Parse
+    final sucesso = await registerUser(nome, senha, email);
+
+    if (sucesso) {
+      // Se o cadastro foi bem-sucedido, redireciona para a tela de login
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Login()),
+      );
+    } else {
+      _showDialog('Erro', 'Falha no cadastro!');
+    }
+  }
+
+  // Função para mostrar um diálogo de erro
+  void _showDialog(String titulo, String mensagem) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text(titulo),
+          content: Text(mensagem),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('OK'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,8 +84,9 @@ class _MyStatefulWidgetState extends State<Cadastro> {
               ),
               Container(
                 padding: const EdgeInsets.all(10),
-                child: const TextField(
-                  decoration: InputDecoration(
+                child: TextField(
+                  controller: _nomeController,
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Nome',
                     filled: true,
@@ -40,9 +96,9 @@ class _MyStatefulWidgetState extends State<Cadastro> {
               ),
               Container(
                 padding: const EdgeInsets.all(10),
-                child: const TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
+                child: TextField(
+                  controller: _emailController,
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Email',
                     filled: true,
@@ -52,9 +108,10 @@ class _MyStatefulWidgetState extends State<Cadastro> {
               ),
               Container(
                 padding: const EdgeInsets.all(10),
-                child: const TextField(
+                child: TextField(
                   obscureText: true,
-                  decoration: InputDecoration(
+                  controller: _senhaController,
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Senha',
                     filled: true,
@@ -64,9 +121,10 @@ class _MyStatefulWidgetState extends State<Cadastro> {
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                child: const TextField(
+                child: TextField(
                   obscureText: true,
-                  decoration: InputDecoration(
+                  controller: _confirmarSenhaController,
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Confirmar senha',
                     filled: true,
@@ -81,8 +139,8 @@ class _MyStatefulWidgetState extends State<Cadastro> {
                 margin: const EdgeInsets.only(top: 35),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: WidgetStateProperty.all<Color>(butao), // Usando a variável 'butao'
-                    shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                    backgroundColor: MaterialStateProperty.all<Color>(butao), // Usando a variável 'butao'
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -94,14 +152,7 @@ class _MyStatefulWidgetState extends State<Cadastro> {
                       color: Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const Login(),
-                      ),
-                    );
-                  },
+                  onPressed: _cadastrar, // Chama a função de cadastro
                 ),
               ),
             ],

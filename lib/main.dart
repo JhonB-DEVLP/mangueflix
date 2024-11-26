@@ -3,7 +3,6 @@ import 'package:mangueflix/login/login.dart';
 import 'package:mangueflix/detalhes/detalhes.dart';
 import 'package:mangueflix/myseries/myseries.dart';
 import 'package:mangueflix/profile/profile.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -17,21 +16,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MangueFLix',
       theme: ThemeData(
-        // Utiliza o Google Fonts Karla para estilização do texto
-        textTheme: GoogleFonts.karlaTextTheme(),
+        // Configura fonte local 'Karla' definida no pubspec.yaml
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(fontFamily: 'Karla'),
+          bodyMedium: TextStyle(fontFamily: 'Karla'),
+          bodySmall: TextStyle(fontFamily: 'Karla'),
+        ),
       ),
       debugShowCheckedModeBanner: false,
-      // Rota inicial do aplicativo
       initialRoute: '/',
       routes: {
-        '/': (context) => const Login(), // Tela inicial (Login)
-        '/profile': (context) => const Profile(), // Tela de Perfil
+        '/': (context) => const Login(),
+        '/profile': (context) => const Profile(),
         '/detalhes': (context) => Detalhes(
             serieId: ModalRoute.of(context)?.settings.arguments as int),
-        // Rotas futuras comentadas para facilitar adição posterior
         '/myseries': (context) => const MySeries(),
-        // '/about': (context) => const About(),
-        // '/minhaConta': (context) => const MinhaConta(),
       },
     );
   }
