@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:mangueflix/detalhes/avaliacao.dart';
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../customappbar.dart';
+
+
 class InfoSerie extends StatefulWidget {
-  final int serieId; // Recebe o ID da série selecionada
+  final int serieId;
 
   const InfoSerie({super.key, required this.serieId});
 
@@ -13,11 +17,11 @@ class InfoSerie extends StatefulWidget {
 }
 
 class _InfoSerieState extends State<InfoSerie> {
-  final String _apiKey = 'c00a752167d66ef3527fa00e1d21fc20'; 
-  final String _baseUrl = 'https://api.themoviedb.org/3'; 
+  final String _apiKey = 'c00a752167d66ef3527fa00e1d21fc20';
+  final String _baseUrl = 'https://api.themoviedb.org/3';
   Map<String, dynamic>? _serieData;
   bool _isLoading = true;
-  bool _isFavorite = false; // Estado do favorito
+  bool _isFavorite = false;
 
   @override
   void initState() {
@@ -26,7 +30,6 @@ class _InfoSerieState extends State<InfoSerie> {
     _checkFavoriteStatus();
   }
 
-  // Carregar os dados da série
   Future<void> fetchSerieDetails() async {
     try {
       final response = await http.get(Uri.parse(
@@ -44,7 +47,6 @@ class _InfoSerieState extends State<InfoSerie> {
     }
   }
 
-  // Verificar se a série está nos favoritos
   Future<void> _checkFavoriteStatus() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     List<String>? favorites = prefs.getStringList('favorites');
@@ -67,7 +69,8 @@ class _InfoSerieState extends State<InfoSerie> {
     });
 
     if (_isFavorite) {
-      favorites.removeWhere((item) => json.decode(item)['id'] == widget.serieId);
+      favorites
+          .removeWhere((item) => json.decode(item)['id'] == widget.serieId);
     } else {
       favorites.add(serieDetails);
     }
@@ -78,77 +81,147 @@ class _InfoSerieState extends State<InfoSerie> {
     });
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Detalhes da Série'),
-        actions: [
-          IconButton(
-            icon: Icon(
-              _isFavorite ? Icons.favorite : Icons.favorite_border,
-              color: _isFavorite ? Colors.red : Colors.grey,
-            ),
-            onPressed: _toggleFavorite,
+  Widget _buildRatingStars(double rating) {
+    int filledStars = (rating / 2).floor();
+    bool hasHalfStar = (rating % 2) >= 1;
+    return Row(
+      children: [
+        ...List.generate(
+          filledStars,
+          (index) => const Icon(Icons.star, color: Colors.red, size: 20),
+        ),
+        if (hasHalfStar)
+          const Icon(Icons.star_half, color: Colors.red, size: 20),
+        ...List.generate(
+          5 - filledStars - (hasHalfStar ? 1 : 0),
+          (index) => const Icon(Icons.star_border, color: Colors.red, size: 20),
+        ),
+        const SizedBox(width: 8),
+        Text(
+          rating.toStringAsFixed(1),
+          style: const TextStyle(
+            fontSize: 20,
+            color: Colors.red,
+            fontWeight: FontWeight.bold,
           ),
-        ],
-      ),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.network(
-                        'https://image.tmdb.org/t/p/w185${_serieData!['poster_path']}',
-                        height: 150,
-                        width: 100,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(width: 16),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              _serieData!['name'] ?? 'Título não disponível',
-                              style: const TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                            Text(
-                              _serieData!['overview'] ?? 'Descrição não disponível',
-                              style: const TextStyle(fontSize: 16),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 16),
-                  const Text(
-                    'Detalhes',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Classificação: ${_serieData!['vote_average']} ⭐\n'
-                    'Gêneros: ${(_serieData!['genres'] as List).map((g) => g['name']).join(', ')}\n'
-                    'Primeira exibição: ${_serieData!['first_air_date'] ?? 'N/A'}',
-                    style: const TextStyle(fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
+        ),
+      ],
     );
   }
+
+ @override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: CustomAppBar(
+      showBackButton: true,
+      actions: [
+        IconButton(
+          icon: Icon(
+            _isFavorite ? Icons.favorite : Icons.favorite_border,
+            color: _isFavorite ? Colors.red : Colors.grey,
+          ),
+          onPressed: _toggleFavorite,
+        ),
+      ],
+    ),
+    body: _isLoading
+        ? const Center(child: CircularProgressIndicator())
+        : SingleChildScrollView(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Image.network(
+                      'https://image.tmdb.org/t/p/w185${_serieData!['poster_path']}',
+                      height: 150,
+                      width: 100,
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                _serieData!['name'] ?? 'Título não disponível',
+                                style: const TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xFF500000),
+                                ),
+                              ),
+                              const SizedBox(width: 8), // Espaço entre o título e o ícone
+                              IconButton(
+                                icon: Icon(
+                                  _isFavorite
+                                      ? Icons.favorite
+                                      : Icons.favorite_border,
+                                  color: _isFavorite ? Colors.red : Colors.grey,
+                                ),
+                                onPressed: _toggleFavorite,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            _serieData!['overview'] ?? 'Descrição não disponível',
+                            style: const TextStyle(
+                              fontSize: 16,
+                              color: Color(0xFF500000),
+                            ),
+                            textAlign: TextAlign.justify,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                const Text(
+                  'Detalhes',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF500000),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                const SizedBox(height: 16),
+                Text(
+                  'Gêneros: ${(_serieData!['genres'] as List).map((g) => g['name']).join(', ')}\n'
+                  'Primeira exibição: ${_serieData!['first_air_date'] ?? 'N/A'}\n'
+                  'Temporadas: ${_serieData!['number_of_seasons']}\n'
+                  'Episódios: ${_serieData!['number_of_episodes']}\n'
+                  'Criadores: ${(_serieData!['created_by'] as List).map((c) => c['name']).join(', ')}',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    color: Color(0xFF500000),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                const Text(
+                  'Estrelas',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF500000),
+                  ),
+                ),
+                _buildRatingStars(_serieData!['vote_average']),
+                const SizedBox(height: 16),
+                const Divider(
+                  color: Colors.black,
+                  thickness: 1,
+                ),
+                Avaliacao()
+              ],
+            ),
+          ),
+  );
+}
 }
