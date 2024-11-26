@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/home/requests/FilteredComedia.dart';
 import 'package:mangueflix/home/requests/FilteredRomance.dart';
+import 'package:mangueflix/home/requests/FilteredAcao.dart';
+import 'package:mangueflix/home/requests/FilteredHorror.dart';
 import 'package:mangueflix/home/requests/trending.dart';
 import './requests/popularSeries.dart';
 
@@ -48,20 +50,28 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(
-              height: 250,
+              height: 300,
               child: PopularSeries(),
             ),
             SizedBox(
-              height: 250,
+              height: 300,
               child: Tendencias(),
             ),
             SizedBox(
-              height: 250,
+              height: 300,
               child: FilteredComedia(),
             ),
             SizedBox(
-              height: 250,
+              height: 300,
               child: FilteredRomance(),
+            ),
+            SizedBox(
+              height: 300,
+              child: FilteredAcao(),
+            ),
+            SizedBox(
+              height: 300,
+              child: FilteredHorror(),
             ),
           ],
         ),

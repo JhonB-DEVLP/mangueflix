@@ -1,3 +1,9 @@
-2024/11/25-18:27:06.963 6f0 Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.584f723d\flutter_tools_chrome_device.59b7c287\Default\Session Storage/MANIFEST-000001
-2024/11/25-18:27:06.971 6f0 Recovering log #3
-2024/11/25-18:27:06.974 6f0 Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.584f723d\flutter_tools_chrome_device.59b7c287\Default\Session Storage/000003.log 
+<<<<<<< HEAD
+2024/11/25-15:25:19.629 4 Reusing MANIFEST /tmp/flutter_tools.UWJTHJ/flutter_tools_chrome_device.KMEASB/Default/Session Storage/MANIFEST-000001
+2024/11/25-15:25:19.629 4 Recovering log #3
+2024/11/25-15:25:19.630 4 Reusing old log /tmp/flutter_tools.UWJTHJ/flutter_tools_chrome_device.KMEASB/Default/Session Storage/000003.log 
+=======
+2024/11/25-18:35:12.442 1e7c Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.dec6f5e\flutter_tools_chrome_device.3ca79808\Default\Session Storage/MANIFEST-000001
+2024/11/25-18:35:12.452 1e7c Recovering log #3
+2024/11/25-18:35:12.456 1e7c Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.dec6f5e\flutter_tools_chrome_device.3ca79808\Default\Session Storage/000003.log 
+>>>>>>> 4a9a79496707591f9e93cf3f2f0cc1fbd140ccc7
