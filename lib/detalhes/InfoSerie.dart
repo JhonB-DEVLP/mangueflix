@@ -50,7 +50,7 @@ class _InfoSerieState extends State<InfoSerie> {
   Future<void> _checkFavoriteStatus() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     List<String>? favorites = prefs.getStringList('favorites');
-    if (favorites != null && favorites.contains(widget.serieId.toString())) {
+    if (favorites!.contains(widget.serieId.toString())) {
       setState(() {
         _isFavorite = true;
       });
