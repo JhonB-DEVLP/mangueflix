@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 // Função para criar avaliação

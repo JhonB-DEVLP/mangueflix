@@ -146,13 +146,13 @@ class _MyStatefulWidgetState extends State<Cadastro> {
                       ),
                     ),
                   ),
+                  onPressed: _cadastrar, // Chama a função de cadastro
                   child: const Text(
                     'Cadastrar',
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
-                  onPressed: _cadastrar, // Chama a função de cadastro
                 ),
               ),
             ],

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:mangueflix/detalhes/InfoSerie.dart';
+import 'package:mangueflix/details/info_serie.dart';
 
 class Tendencias extends StatefulWidget {
   const Tendencias({super.key});
 
   @override
-  _TendenciasState createState() => _TendenciasState();
+  TendenciasState createState() => TendenciasState();
 }
 
-class _TendenciasState extends State<Tendencias> {
+class TendenciasState extends State<Tendencias> {
   final String _apiKey = 'c00a752167d66ef3527fa00e1d21fc20';
   final String _baseUrl = 'https://api.themoviedb.org/3';
   List<dynamic> _tendencias = [];

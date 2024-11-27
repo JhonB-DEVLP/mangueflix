@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/login/login.dart';
-import 'package:mangueflix/detalhes/detalhes.dart';
-import 'package:mangueflix/myseries/myseries.dart';
+import 'package:mangueflix/details/detalhes.dart';
+import 'package:mangueflix/myseries/my_series.dart';
 import 'package:mangueflix/profile/profile.dart';
 import 'package:mangueflix/about/about.dart';
 import 'package:mangueflix/report/report.dart';
-import 'package:mangueflix/home/homePage.dart';
-
+import 'package:mangueflix/home/home_page.dart';
+import 'package:mangueflix/settings/settings.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         '/myseries': (context) => const MySeries(),
         '/about': (context) => const About(),
         '/report': (context) => const Report(),
-        // '/settings': (context) => const Settings(),
+        '/settings': (context) => const Settings(),
       },
     );
   }

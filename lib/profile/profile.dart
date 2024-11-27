@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/colors/colors.dart';
 import 'package:mangueflix/profile/bio.dart';
-import 'package:mangueflix/profile/histAval.dart';
+import 'package:mangueflix/profile/hist_avaliacao.dart';
 import 'package:mangueflix/profile/infos.dart';
 
 class Profile extends StatelessWidget {

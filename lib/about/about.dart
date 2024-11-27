@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/colors/colors.dart';
-import 'package:mangueflix/myDrawer.dart';
+import 'package:mangueflix/my_drawer.dart';
 
 class About extends StatefulWidget {
   const About({super.key});

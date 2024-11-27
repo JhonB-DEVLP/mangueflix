@@ -23,9 +23,11 @@ class BioState extends State<Bio> {
     ParseUser? currentUser = await ParseUser.currentUser();
     if (currentUser != null) {
       String? bio = currentUser.get<String>('biografia'); // Acessa a biografia do usuário
-      setState(() {
-        _bio = bio ?? ''; // Se a biografia for nula, define como string vazia
-      });
+      if (mounted) { // Verifica se o widget ainda está montado
+        setState(() {
+          _bio = bio ?? ''; // Se a biografia for nula, define como string vazia
+        });
+      }
     }
   }
 
@@ -36,14 +38,18 @@ class BioState extends State<Bio> {
       currentUser.set('biografia', newBio); // Atualiza a biografia no Parse
       ParseResponse response = await currentUser.save();
       if (response.success) {
-        setState(() {
-          _bio = newBio; // Atualiza a biografia localmente
-        });
+        if (mounted) { // Verifica se o widget ainda está montado
+          setState(() {
+            _bio = newBio; // Atualiza a biografia localmente
+          });
+        }
       } else {
         // Se falhar ao atualizar a biografia, mostre uma mensagem de erro
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erro ao atualizar biografia: ${response.error?.message}')),
-        );
+        if (mounted) { // Verifica se o widget ainda está montado antes de exibir o SnackBar
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Erro ao atualizar biografia: ${response.error?.message}')),
+          );
+        }
       }
     }
   }
@@ -96,7 +102,7 @@ class BioState extends State<Bio> {
 
   // Função para exibir o campo de edição da biografia
   void _showEditBioDialog() {
-    TextEditingController _bioController = TextEditingController(text: _bio);
+    TextEditingController bioController = TextEditingController(text: _bio);
 
     showDialog(
       context: context,
@@ -104,7 +110,7 @@ class BioState extends State<Bio> {
         return AlertDialog(
           title: const Text('Editar Biografia'),
           content: TextField(
-            controller: _bioController,
+            controller: bioController,
             maxLines: 5,
             decoration: const InputDecoration(hintText: 'Digite sua biografia aqui...'),
           ),
@@ -118,7 +124,7 @@ class BioState extends State<Bio> {
             TextButton(
               onPressed: () {
                 // Atualiza a biografia com o texto digitado
-                _updateBio(_bioController.text);
+                _updateBio(bioController.text);
                 Navigator.pop(context);
               },
               child: const Text('Salvar'),
