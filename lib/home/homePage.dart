@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/home/requests/FilteredComedia.dart';
 import 'package:mangueflix/home/requests/FilteredRomance.dart';
-import 'package:mangueflix/home/requests/FilteredAcao.dart';
-import 'package:mangueflix/home/requests/FilteredHorror.dart';
 import 'package:mangueflix/home/requests/trending.dart';
 import './requests/popularSeries.dart';
-import 'package:mangueflix/bottomGlobal/bottomNavBar.dart'; // Importe o BottomNavBar
+
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -67,18 +65,11 @@ class HomeState extends State<Home> {
               height: 300,
               child: FilteredRomance(),
             ),
-            SizedBox(
-              height: 300,
-              child: FilteredAcao(),
-            ),
-            SizedBox(
-              height: 300,
-              child: FilteredHorror(),
-            ),
+            
           ],
         ),
       ),
-      bottomNavigationBar: const BottomNavBar(),  // Adicionando o BottomNavBar global
+      
     );
   }
 }

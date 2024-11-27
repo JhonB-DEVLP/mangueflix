@@ -1,0 +1,55 @@
+# Dart/Pub related
+.dart_tool/
+.packages
+.pub/
+
+# Flutter build outputs
+build/
+flutter-*.png
+*.flutter-plugins
+*.flutter-plugins-dependencies
+
+# iOS related
+ios/Flutter/.last_build_id
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/engine/
+ios/Flutter/flutter_assets/
+ios/.generated/
+
+# Android related
+android/.gradle/
+android/app/build/
+android/gradle/
+android/app/intermediates/
+android/.idea/
+
+# VS Code settings
+.vscode/
+
+# IntelliJ/Android Studio
+.idea/
+
+# MacOS related
+macos/Pods/
+macos/.symlinks/
+
+# Linux related
+linux/.symlinks/
+
+# Windows related
+windows/.symlinks/
+
+# Generated files
+*.log
+*.class
+*.jar
+*.war
+*.db
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db

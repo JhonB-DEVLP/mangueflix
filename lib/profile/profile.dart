@@ -3,7 +3,6 @@ import 'package:mangueflix/colors/colors.dart';
 import 'package:mangueflix/profile/bio.dart';
 import 'package:mangueflix/profile/histAval.dart';
 import 'package:mangueflix/profile/infos.dart';
-import 'package:mangueflix/bottomGlobal/bottomNavBar.dart'; // Importe o BottomNavBar
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -46,7 +45,7 @@ class Profile extends StatelessWidget {
           HistAval(),
         ],
       ),
-      bottomNavigationBar: const BottomNavBar(), // Adicionando o BottomNavBar global
+      
     );
   }
 }

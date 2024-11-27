@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/colors/colors.dart';
 import 'package:mangueflix/myDrawer.dart';
-import 'package:mangueflix/bottomGlobal/bottomNavBar.dart'; // Importe o BottomNavBar
 
 class About extends StatefulWidget {
   const About({super.key});
@@ -75,7 +74,7 @@ class AboutState extends State<About> {
         ),
       ),
       // Adicionando o BottomNavBar global
-      bottomNavigationBar: const BottomNavBar(),
+      
     );
   }
 }

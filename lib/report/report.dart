@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mangueflix/bottomGlobal/bottomNavBar.dart'; // Importando o widget CustomBottomNavBar
 
 class Report extends StatelessWidget {
   const Report({super.key});
@@ -7,13 +6,11 @@ class Report extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 255, 255, 255),  // Cor de fundo
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255), // Cor de fundo
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Center(
           child: IconButton(
-            style: ButtonStyle(
-                backgroundColor: WidgetStateProperty.all<Color>(Color(0x00000000))), // Corrigido para WidgetStateProperty
             icon: Image.asset('assets/image/mangueFlix.png'),
             iconSize: 50,
             onPressed: () {},
@@ -50,7 +47,7 @@ class Report extends StatelessWidget {
               Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF691C3A),  // Usando a cor do BottomNavBar
+                    backgroundColor: const Color(0xFF691C3A), // Usando a cor do BottomNavBar
                     padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0),
@@ -76,7 +73,6 @@ class Report extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: const BottomNavBar(),  // Usando o widget global
     );
   }
 
@@ -86,15 +82,21 @@ class Report extends StatelessWidget {
       maxLines: maxLines,
       decoration: InputDecoration(
         hintText: label,
-        hintStyle: const TextStyle(color: Colors.white),
-        filled: true,
-        fillColor: const Color.fromARGB(255, 91, 91, 91),
+        hintStyle: const TextStyle(color: Colors.black),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0),
-          borderSide: BorderSide.none,
+          borderSide: const BorderSide(color: Color(0xFF691C3A), width: 2.0), // Borda vinho
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.0),
+          borderSide: const BorderSide(color: Color(0xFF691C3A), width: 2.0),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.0),
+          borderSide: const BorderSide(color: Color(0xFF691C3A), width: 2.5), // Destaque ao focar
         ),
       ),
-      style: const TextStyle(color: Colors.white),
+      style: const TextStyle(color: Colors.black), // Texto em preto
     );
   }
 }

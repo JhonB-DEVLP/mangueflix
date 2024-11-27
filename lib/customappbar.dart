@@ -4,7 +4,11 @@ import 'package:mangueflix/colors/colors.dart';
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool showBackButton;
 
-  const CustomAppBar({super.key, this.showBackButton = false, required List<IconButton> actions});
+  const CustomAppBar({
+    super.key,
+    this.showBackButton = false,
+    required List<IconButton> actions,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +17,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
     return AppBar(
       backgroundColor: Colors.transparent,
+      iconTheme: const IconThemeData(
+        color: vinho, // Cor dos ícones (incluindo o menu hambúrguer)
+      ),
       title: Center(
         child: IconButton(
           icon: Image.asset('assets/image/mangueFlix.png'),
@@ -35,7 +42,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: currentRoute != '/profile'
           ? [
               IconButton(
-                icon: const Icon(Icons.account_circle, size: 50, color: Color.fromARGB(255, 0, 0, 0)),  // Ícone de usuário
+                icon: const Icon(
+                  Icons.account_circle,
+                  size: 50,
+                  color: vinho, // Cor do ícone de usuário
+                ),
                 onPressed: () {
                   Navigator.pushNamed(context, '/profile');
                 },

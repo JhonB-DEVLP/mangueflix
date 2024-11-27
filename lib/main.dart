@@ -32,12 +32,13 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const Login(),
         '/profile': (context) => const Profile(),
-        '/homePage': (context) => const Home(),
+        '/home': (context) => const Home(),
         '/detalhes': (context) => Detalhes(
             serieId: ModalRoute.of(context)?.settings.arguments as int),
         '/myseries': (context) => const MySeries(),
         '/about': (context) => const About(),
         '/report': (context) => const Report(),
+        // '/settings': (context) => const Settings(),
       },
     );
   }

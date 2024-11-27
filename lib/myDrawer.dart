@@ -33,25 +33,24 @@ class MyDrawer extends StatelessWidget {
             textColor: vinho,
             backgroundColor: Colors.white, // Fundo branco para destaque
             onTap: () {
-              Navigator.pop(context); // Fecha o Drawer
-              Navigator.pushNamed(
-                  context, '/home'); // Vai para a tela principal
+              print("Home selecionada");
             },
           ),
 
-          // Item: Tela Report
+          // Item: Series Favoritas
           _buildDrawerItem(
             context,
-            icon: Icons.report_problem,
-            label: "Tela Report",
+            icon: Icons.favorite,
+            label: "Séries Favoritas",
             iconColor: Colors.white,
             textColor: Colors.white,
             onTap: () {
               Navigator.pop(context); // Fecha o Drawer
               Navigator.pushNamed(
-                  context, '/report'); // Vai para a tela principal
+                  context, '/myseries'); // Vai para a tela das series salvas
             },
           ),
+
 
           // Item: Sobre o MangueFlix
           _buildDrawerItemWithSvg(
@@ -62,6 +61,20 @@ class MyDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               Navigator.pushNamed(context, '/about'); // Vai para a tela Sobre
+            },
+          ),
+
+          // Item: Tela Report
+          _buildDrawerItem(
+            context,
+            icon: Icons.report_problem,
+            label: "Reportar um problema",
+            iconColor: Colors.white,
+            textColor: Colors.white,
+            onTap: () {
+              Navigator.pop(context); // Fecha o Drawer
+              Navigator.pushNamed(
+                  context, '/report'); // Vai para a tela principal
             },
           ),
 
