@@ -1,0 +1,248 @@
+{
+   "checksum": "d345bce63e84197928deae6d216148c0",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13342938182134028",
+               "date_last_used": "0",
+               "guid": "756b480e-1165-4908-bda8-58b67e40cad9",
+               "id": "13",
+               "name": "Acer",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.acer.com/",
+               "visit_count": 0
+            } ],
+            "date_added": "13377108189547194",
+            "date_last_used": "0",
+            "date_modified": "13377108193665160",
+            "guid": "45e4f55e-1188-4618-878c-fa942a471b1b",
+            "id": "12",
+            "name": "Acer",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13076704705192157",
+            "date_last_used": "0",
+            "guid": "6bcb9948-ce9e-4d94-954a-7163a7acb859",
+            "id": "14",
+            "name": "Bookmarks",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "chrome://bookmarks/",
+            "visit_count": 0
+         }, {
+            "date_added": "13019972455497000",
+            "date_last_used": "0",
+            "guid": "df5b297d-697b-4fac-960a-e48d1b45b2e0",
+            "id": "15",
+            "name": "Owl City (& Lights) - The Yacht Club - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=mhlrT3yQRxY",
+            "visit_count": 0
+         }, {
+            "date_added": "13020220512592365",
+            "date_last_used": "0",
+            "guid": "082e6b7e-1710-4a64-b620-0dd14d483f26",
+            "id": "16",
+            "name": "DublaSéries: Qualidade é nossa prioridade! Séries Dubladas, seriados dublados, download de séries: Veronica Mars",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://dublaseries.blogspot.com.br/search/label/Veronica%20Mars",
+            "visit_count": 0
+         }, {
+            "date_added": "13023084042948000",
+            "date_last_used": "0",
+            "guid": "06e1bf45-acd0-46f1-b228-3d49c5afde39",
+            "id": "17",
+            "name": "www.d-tox.com/pages/sceneLookup/2013.08.11 - Pierce The Veil In-store Signing",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://www.d-tox.com/pages/sceneLookup/2013.08.11%20-%20Pierce%20The%20Veil%20In-store%20Signing",
+            "visit_count": 0
+         }, {
+            "date_added": "13026338812184000",
+            "date_last_used": "0",
+            "guid": "627d73cd-4a68-48c5-b338-17683de089c5",
+            "id": "18",
+            "name": "The Listening | LIGHTS",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://www.iamlights.com/content/listening",
+            "visit_count": 0
+         }, {
+            "date_added": "13026780674016000",
+            "date_last_used": "0",
+            "guid": "8d5659ef-ed83-4e43-afaa-3572761367c9",
+            "id": "19",
+            "name": "Acoustic \"Goodnight Moon\" on Vimeo",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://vimeo.com/69596268",
+            "visit_count": 0
+         }, {
+            "date_added": "13026792240296000",
+            "date_last_used": "0",
+            "guid": "8f180b44-af7e-4638-bdfa-0e651c52b8a6",
+            "id": "20",
+            "name": "Untitled on Vimeo",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://vimeo.com/28888922",
+            "visit_count": 0
+         }, {
+            "date_added": "13027466163037000",
+            "date_last_used": "0",
+            "guid": "94c64278-2a2a-4cd4-b077-08f451ba434f",
+            "id": "21",
+            "name": "Way We Feel by Jesse Lawson",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://myspace.com/jessiahband/music/songs",
+            "visit_count": 0
+         }, {
+            "date_added": "13027471844189000",
+            "date_last_used": "0",
+            "guid": "b17b1687-4df4-43ad-8a61-29d5446b2652",
+            "id": "22",
+            "name": "▶ The Pretty Reckless - Going To Hell | WXRX Radio Acoustic by TPR Italia",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://soundcloud.com/momsen_zombies/the-pretty-reckless-going-to",
+            "visit_count": 0
+         }, {
+            "date_added": "13028673591970000",
+            "date_last_used": "0",
+            "guid": "8b28121c-ef62-47ba-b968-d70ac5a1ec26",
+            "id": "23",
+            "name": "Matt Burke Photo // Tour update video from the Lucky Street Tour with...",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://mattburkephoto.tumblr.com/post/21755440776/tourvideo",
+            "visit_count": 0
+         }, {
+            "date_added": "13028673600401000",
+            "date_last_used": "0",
+            "guid": "1085c0a2-b362-4bb5-8d8c-f0cd413d5029",
+            "id": "24",
+            "name": "Matt Burke Photo // Go Radio| Live at the Masquerade | Atlanta, Ga ...",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://mattburkephoto.tumblr.com/post/20915484778/go-radio-live-at-the-masquerade-atlanta-ga",
+            "visit_count": 0
+         }, {
+            "date_added": "13028692417146357",
+            "date_last_used": "0",
+            "guid": "476727fe-dbf3-47a0-967a-cd9e37de93b4",
+            "id": "25",
+            "name": "Альтернативный обменник - делись и качай тяжелую музыку бесплатно!",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://kharkov-underground.rusfolder.net/27313086",
+            "visit_count": 0
+         }, {
+            "date_added": "13217045251703275",
+            "date_last_used": "0",
+            "guid": "aae9ca07-9d98-4c3a-a6e2-85a79a5375a2",
+            "id": "26",
+            "name": "mat-Documento.docx - Microsoft Word Online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://onedrive.live.com/edit.aspx?resid=A8A71CCF7B7F0EA9!159&ithint=file%2cdocx",
+            "visit_count": 0
+         }, {
+            "date_added": "13377108184697468",
+            "date_last_used": "0",
+            "guid": "be3c87bd-148e-424e-859a-41dd1fc81ce5",
+            "id": "7",
+            "name": "Amazon",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://s3.amazonaws.com/amundsen/redirect/19q2/amazon.html?utm_source=win32&utm_medium=favorite",
+            "visit_count": 0
+         }, {
+            "date_added": "13377108184695514",
+            "date_last_used": "0",
+            "guid": "0a93b000-6475-4813-8446-99b7b80ee737",
+            "id": "6",
+            "name": "Booking.com",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://s3.amazonaws.com/amundsen/redirect/19q2/booking.html?utm_source=win32&utm_medium=favorite",
+            "visit_count": 0
+         } ],
+         "date_added": "13377108184389430",
+         "date_last_used": "0",
+         "date_modified": "13377108193660828",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13377108184389433",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Outros favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13236871634139006",
+            "date_last_used": "0",
+            "guid": "70c603ee-f958-4bfb-8f88-1abd643b8d7b",
+            "id": "10",
+            "name": "Nova guia",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "chrome-native://newtab/",
+            "visit_count": 0
+         }, {
+            "date_added": "13291341697384681",
+            "date_last_used": "0",
+            "guid": "96e8eb63-0747-441d-893f-6b64f6d33873",
+            "id": "11",
+            "name": "Google",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.google.com.br/",
+            "visit_count": 0
+         } ],
+         "date_added": "13377108184389435",
+         "date_last_used": "0",
+         "date_modified": "13291341697384681",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos do celular",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCIBJDWmTAQAAKg4QABgBIBQoBTAAOABAABIAKhh1YmpSdEs2OEhHMXhaaTE1NElnSlVRPT1IA6AGDBKuAQgZEqkBChxjRjdJdE5wbHBHVnFGYUNHYWxSUUlZOUU5MjQ9EiQ0NzY3MjdmZS1kYmYzLTQ3YTAtOTY3YS1jZDllMzdkZTkzYjQYACACKAIw38DHyLYyOMLFo/2hMkDGk8fItjJKHHUzRGVSa3ZuMC9GbVhHQ1Y4RzU4NHYvT1Ywdz1aICIe/+4zWndaR3FHSWV0UlYzZ0JtdnZ6Wm1nNnZXLzg9ZdkulszCPgJgBRKuAQgYEqkBChwrQnZFUnE5MEFiSkdsWm5TRm1JcHR4SHBhVWs9EiQxMDg1YzBhMi1iMzYyLTRiYjUtOGQ4Yy1mMGNkNDEzZDUwMjkYACAAKAAwtruj/aEyOPzDo/2hMkD8w6P9oTJKHDNMZUpDZnFXallWS25hejFXRDlSZmtnbUVhUT1aICIe/91YUTJkNS83UUN3MWFMRXBNdVJiaVovM0JXVGs9ZQAAAADCPgJgBRKuAQgXEqkBChw4c2wwRUZ3TTlzSkxPSGNtYlJ0TzFCSStkQTg9EiQ4YjI4MTIxYy1lZjYyLTQ3YmEtYjk2OC1kNzBhYzVhMWVjMjYYACAAKAAwubuj/aEyOMzEo/2hMkDMxKP9oTJKHEd5cEpIK2NWeDc4VS82MmtZeUxRYnRkNDRzZz1aICIe/7tGVkhORlZvYTJlVHRnWE5uZHNBaFdTRFRlZEU9ZQAAAADCPgJgBRKtAQgWEqgBChxrLzliaGE1cVVMRW94VXRXSTd5MG01UzlMWU09EiRiMTdiMTY4Ny00ZGY0LTQzYWQtOGE2MS0yOWQ1NDQ2YjI2NTIYACACKAIw3sDHyLYyON3Do/2hMkDFk8fItjJKHE5CdDEwOWtxSG9UNmZESVNidHEzUG82VlFodz1aHyId/3doYjArcndYWGhWc1E0TGVncllpNlM1aUV3ST1lK/0TxMI+AmAFEq0BCBUSqAEKHGpjTyswUDM1emtKMGgzVmtnYmFKRHFNMm9ycz0SJDk0YzY0Mjc4LTJhMmEtNGNkNC1iMDc3LTA4ZjQ1MWJhNDM0ZhgAIAIoAjDdwMfItjI43cWj/aEyQMSTx8i2MkocWVYwZkxzY2RnS29kMnBibkg2UkxPVkRqNmN3PVofIh3+dGxtMk9qZWlQSk5QbGJxSlZuSTZxN2RteHI4PWVhgpTywj4CYAUSrQEIExKoAQocWTRueGtWYXZPbmh5YmM0TzBOaDl5VXRFaFBvPRIkOGQ1NjU5ZWYtZWQ4My00ZTQzLWFmYWEtMzU3Mjc2MTM2N2M5GAAgAigCMNzAx8i2MjjSwaP9oTJAw5PHyLYyShx2QXVEYkQrT1Faay9aK0Z5eUp5Q3VjUXhtcUk9Wh8iHfsxekhxUHA2VUYwTkNGRVhwR0VTcVNhVzNlcms9Zenb3aPCPgJgBRKtAQgSEqgBChxub0M0dm1XT1VldWJUcktDY08ybmswNVZEQXc9EiQ2MjdkNzNjZC00YTY4LTQ4YzUtYjMzOC0xNzY4M2RlMDg5YzUYACACKAIw28DHyLYyOLLEo/2hMkDCk8fItjJKHGc1aHAwMXJQUkJQQjUyMExUN1ZGOHJtYVhlaz1aHyId9kU1MjdXb3FxVWpJUjVSK05uZlphbXJJTlVwbz1lrhqNbsI+AmAFEq0BCBESqAEKHDFSMzRzM3RLbFVQN2xaMk9ZT1FuL3hiRUJsMD0SJDA2ZTFiZjQ1LWFjZDAtNDZmMS1iMjI4LTNkNDljNWFmZGUzORgAIAIoAjDawMfItjI4psWj/aEyQMCTx8i2MkocL3FTa3EzRytWampnY2gzdWt3Mi93NDFDL1BvPVofIh3tRXltZG9MV0xtZVVkL2ZtbkFkK00wUkVDU0QwPWVWAYmTwj4CYAUSrQEIDxKoAQocVVQyWjg2Q05rTGdDRWl5MTQ5cXZmdm5MOGg0PRIkZGY1YjI5N2QtNjk3Yi00ZmFjLTk2MGEtZTQ4ZDFiNDViMmUwGAAgAigCMNjAx8i2MjivwaP9oTJAvZPHyLYyShw0ZGRlTi9UbldtU2g2T0Q0N3I5TVFHZHdsZTQ9Wh8iHbVXOVNJU25pRHlzK0ozREwreHZscURqY3lhdVU9ZRgOTTDCPgJgBRKOAQgCEokBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiRhYWU4NzI0OS0wMzkxLTUyYWItOTUxNi1mYzg4NDg4MjRmMzAYACAAKAAw47+go7cxOPDFoKO3MUDwxaCjtzFKHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAwj4CYAASrAEIDRKnAQocZktxM2p1aW5pOW5mcFlBSjN0OWI3N294QWVFPRIkNzU2YjQ4MGUtMTE2NS00OTA4LWJkYTgtNThiNjdlNDBjYWQ5GAAgACgAMPbxrKO3MTip9KyjtzFAqfSso7cxShxScHV4cGM2Z0xTbXcvaVRvWk5uS09USkVYckE9Wh4iHE14NVdtTFNpNnZVd1RQQzVRZmNLOTVlUzNoRT1lAAAAAMI+AmACEqwBCAwSpwEKHGJwT245bktKSFFnZ3QvUlVOMkpFOWxtNVROUT0SJDQ1ZTRmNTVlLTExODgtNDYxOC04NzhjLWZhOTQyYTQ3MWIxYhgAIAAoADD18ayjtzE4hvSso7cxQIb0rKO3MUocWFBLL0N3a0NxM2ZZc25KbVBNQWZvYm1aZy9BPVoeIhw3SjNaZFJMT1R4ZGluNGhrYmwxb2IrUHJXdG89ZQAAAADCPgJgABKsAQgLEqcBChx1NHhINmFoYW8zZ0QzNlVFOUhrZE5KYjRNQ3c9EiQ5NmU4ZWI2My0wNzQ3LTQ0MWQtODkzZi02YjY0ZjZkMzM4NzMYACAAKAAwr7uj/aEyONfAo/2hMkDXwKP9oTJKHEkzZlRHRVNETXVwR1FPem9yOCtrZkRKZXJPVT1aHiIcalVyS0s0WHkvUWpnQW1GMGhiWTdpYjdwY1djPWViSqhcwj4CYAUSrQEIFBKoAQocV3p4ZUt0UFFvb1l4QnBNbDJ0S2sybGQ1WG5JPRIkOGYxODBiNDQtYWY3ZS00NjM4LWJkZmEtMGU2NTFjNTJiOGE2GAAgAigCMNfAx8i2MjiXxKP9oTJAw5PHyLYyShx2amdkV3N2VXZqOWpmcEo0MTVaejdrMjVxVVk9Wh8iHf00R1IybEV4Zms5Sk9SemQ1S3Vva0JSZGRoTzA9ZYKbLnjCPgJgBRKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiRhOWRjODhjMC1mYzM1LTUxNGMtODIzYy0zNTZkYzk2NWQwNTUYACAAKAAw4r+go7cxONjFoKO3MUDYxaCjtzFKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASrQEIEBKoAQoca0JFbVBYUmhQaWNUVHpRbXF6WmgyZ2FBRm5BPRIkMDgyZTZiN2UtMTcxMC00YTY0LWI2MjAtMGRkMTRkNDgzZjI2GAAgAigCMNnAx8i2MjjywKP9oTJAv5PHyLYyShxwRzhqdC80SWtqc3NHV3llbUJXVUhGZ0JJdTg9Wh8iHdpXcndsYWdMRHlsaGdNNm5qZHBiZ0xFNCtBa1k9ZT7vUoXCPgJgBRKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQxZDJlOWEzNS0zNTVjLTVmZmMtYjY3Zi1mNjU3ZmEzYTg3MTgYACAAKAAw6L+go7cxOLzGoKO3MUC8xqCjtzFKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAASrAEIDhKnAQocSTI5dTZXZGVNZDJyKzhlRGdYcFJHMTNaWEtjPRIkNmJjYjk5NDgtY2U5ZS00ZDk0LTk1NGEtNzE2M2E3YWNiODU5GAAgACgAMLG7o/2hMjiOwaP9oTJAjsGj/aEyShxkWGx4dFBvRXl2QUNvaUJpQmhlOXhpUDB6Kzg9Wh4iHGtud3llQlFMSk5ybEEra0pSYjh1N2RBcW1wOD1lAAAAAMI+AmAFEq4BCBoSqQEKHDZ3ZytscmpSeUJBckJTYnE5Rkk0WDlxREFDMD0SJGFhZTljYTA3LTlkOTgtNGMzYS1hNmUyLTg1YTc5YTUzNzVhMhgAIAIoAjDWwMfItjI45MSj/aEyQNSTx8i2MkocT3I0b1JBUXcyVWs0NlFrMHJTd3I2ZEVnam5BPVogIh7/93RLUUh5Znd4UUY1NEhYVlVFV1U2TnNIVHBlTT1lepeA9cI+AmAFEqwBCAoSpwEKHGppZFZLZVBOOUdDd3dEZVlTTXdqTHBpdnAyOD0SJDcwYzYwM2VlLWY5NTgtNGJmYi04Zjg4LTFhYmQ2NDNiOGQ3YhgAIAAoADC0u6P9oTI4oMOj/aEyQKDDo/2hMkocUklFN0lYMDNXUkYvdytqVzRKY2gyMi9UYldRPVoeIhxRajVORUg3ZWxSZTRhSTE0eWRMUEh2NG9XcjQ9ZQAAAADCPgJgBTAAOAA=",
+   "version": 1
+}
