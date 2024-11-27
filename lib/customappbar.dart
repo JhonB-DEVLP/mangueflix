@@ -35,8 +35,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: currentRoute != '/profile'
           ? [
               IconButton(
-                icon: Image.asset('assets/image/fotoFlutter.png'),
-                iconSize: 50,
+                icon: const Icon(Icons.account_circle, size: 50, color: Color.fromARGB(255, 0, 0, 0)),  // Ícone de usuário
                 onPressed: () {
                   Navigator.pushNamed(context, '/profile');
                 },

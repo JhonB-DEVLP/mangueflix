@@ -3,7 +3,7 @@ import 'package:mangueflix/database/cadastro.dart'; // Importe a função de cad
 import 'package:mangueflix/login/login.dart'; // Para redirecionar após o cadastro
 
 const Color fundo = Color(0xFFf1ecd6);
-const Color butao = Color(0xFFE40624);
+const Color botao = Color(0xFFE40624);
 const Color titulo = Color(0xFF691C3A);
 
 class Cadastro extends StatefulWidget {
@@ -139,8 +139,8 @@ class _MyStatefulWidgetState extends State<Cadastro> {
                 margin: const EdgeInsets.only(top: 35),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(butao), // Usando a variável 'butao'
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    backgroundColor: WidgetStateProperty.all<Color>(botao), // Corrigido para WidgetStateProperty
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>( // Corrigido
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),

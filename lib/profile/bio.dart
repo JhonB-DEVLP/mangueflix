@@ -6,10 +6,10 @@ class Bio extends StatefulWidget {
   const Bio({super.key});
 
   @override
-  _BioState createState() => _BioState();
+  BioState createState() => BioState();
 }
 
-class _BioState extends State<Bio> {
+class BioState extends State<Bio> {
   String? _bio;
 
   @override

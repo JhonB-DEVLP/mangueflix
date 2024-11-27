@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mangueflix/myDrawer.dart';
 import 'package:mangueflix/colors/colors.dart';
 import './customappbar.dart';
-import 'home/homePage.dart';
+import 'package:mangueflix/home/homePage.dart';
 
 class AppBody extends StatefulWidget {
   const AppBody({super.key});

@@ -24,31 +24,35 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
 
-          // Item: Popular (com fundo branco)
+          // Item: Tela Principal
           _buildDrawerItem(
             context,
             icon: Icons.home,
-            label: "Popular",
+            label: "Tela Principal",
             iconColor: vinho,
             textColor: vinho,
-            backgroundColor: Colors.white, // Fundo branco apenas para o Popular
+            backgroundColor: Colors.white, // Fundo branco para destaque
             onTap: () {
-              print("Popular selecionado");
+              Navigator.pop(context); // Fecha o Drawer
+              Navigator.pushNamed(
+                  context, '/home'); // Vai para a tela principal
             },
           ),
-          // Item: Minhas Séries
+
+          // Item: Tela Report
           _buildDrawerItem(
             context,
-            icon: Icons.favorite_border,
-            label: "Minhas Séries",
+            icon: Icons.report_problem,
+            label: "Tela Report",
             iconColor: Colors.white,
             textColor: Colors.white,
             onTap: () {
               Navigator.pop(context); // Fecha o Drawer
               Navigator.pushNamed(
-                  context, '/myseries'); // Navega para as séries favoritas
+                  context, '/report'); // Vai para a tela principal
             },
           ),
+
           // Item: Sobre o MangueFlix
           _buildDrawerItemWithSvg(
             context,
@@ -56,33 +60,24 @@ class MyDrawer extends StatelessWidget {
             label: "Sobre o MangueFlix",
             textColor: Colors.white,
             onTap: () {
-              print("Sobre o MangueFlix selecionado");
+              Navigator.pop(context);
+              Navigator.pushNamed(context, '/about'); // Vai para a tela Sobre
             },
           ),
-          // Item: Configurações
+
+          // Item: Configurações (exemplo, caso adicione uma tela de configurações)
           _buildDrawerItem(
             context,
-            icon: Icons.brightness_7,
+            icon: Icons.settings,
             label: "Configurações",
             iconColor: Colors.white,
             textColor: Colors.white,
             onTap: () {
-              print("Configurações selecionado");
-            },
-          ),
-          // Item: Reportar Problema
-          _buildDrawerItem(
-            context,
-            icon: Icons.report,
-            label: "Reportar Problema",
-            iconColor: Colors.white,
-            textColor: Colors.white,
-            onTap: () {
-              print("Problema Reportado");
+              print("Configurações não implementadas ainda");
             },
           ),
 
-          // Item: Sair (removendo o Container que dá o destaque)
+          // Item: Sair
           _buildDrawerItem(
             context,
             icon: Icons.logout,
@@ -91,7 +86,8 @@ class MyDrawer extends StatelessWidget {
             textColor: Colors.white,
             onTap: () {
               Navigator.pop(context); // Fecha o Drawer
-              Navigator.pop(context); // Fecha a tela atual
+              Navigator.pushReplacementNamed(
+                  context, '/'); // Volta para a tela de Login
             },
           ),
         ],

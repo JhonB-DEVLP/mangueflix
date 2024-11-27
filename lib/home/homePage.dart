@@ -5,18 +5,20 @@ import 'package:mangueflix/home/requests/FilteredAcao.dart';
 import 'package:mangueflix/home/requests/FilteredHorror.dart';
 import 'package:mangueflix/home/requests/trending.dart';
 import './requests/popularSeries.dart';
+import 'package:mangueflix/bottomGlobal/bottomNavBar.dart'; // Importe o BottomNavBar
 
 class Home extends StatefulWidget {
   const Home({super.key});
 
   @override
-  _HomeState createState() => _HomeState();
+  HomeState createState() => HomeState();
 }
 
-class _HomeState extends State<Home> {
+class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFF1ECD6),  // Definindo a cor de fundo no Scaffold
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -76,6 +78,7 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
+      bottomNavigationBar: const BottomNavBar(),  // Adicionando o BottomNavBar global
     );
   }
 }

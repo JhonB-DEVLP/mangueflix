@@ -93,8 +93,8 @@ class _MyStatefulWidgetState extends State<Login> {
                 margin: const EdgeInsets.only(top: 35, bottom: 20),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(vermelho),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    backgroundColor: WidgetStateProperty.all<Color>(vermelho), // Corrigido para WidgetStateProperty
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>( // Corrigido
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),

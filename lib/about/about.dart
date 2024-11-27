@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/colors/colors.dart';
 import 'package:mangueflix/myDrawer.dart';
+import 'package:mangueflix/bottomGlobal/bottomNavBar.dart'; // Importe o BottomNavBar
 
-class About extends StatelessWidget {
+class About extends StatefulWidget {
   const About({super.key});
 
+  @override
+  AboutState createState() => AboutState();
+}
+
+class AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,29 +74,8 @@ class About extends StatelessWidget {
           ),
         ),
       ),
-      // Footer com barra inferior
-      bottomNavigationBar: BottomAppBar(
-        color: const Color(0xFF691C3A), // Cor de fundo do footer
-        shape: const CircularNotchedRectangle(),
-        notchMargin: 8.0,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              IconButton(
-                icon: const Icon(Icons.home, color: Colors.white),
-                onPressed: null,
-              ),
-              
-              IconButton(
-                icon: const Icon(Icons.favorite, color: Colors.white),
-                onPressed: null,
-              ),
-            ],
-          ),
-        ),
-      ),
+      // Adicionando o BottomNavBar global
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

@@ -3,6 +3,7 @@ import 'package:mangueflix/colors/colors.dart';
 import 'package:mangueflix/profile/bio.dart';
 import 'package:mangueflix/profile/histAval.dart';
 import 'package:mangueflix/profile/infos.dart';
+import 'package:mangueflix/bottomGlobal/bottomNavBar.dart'; // Importe o BottomNavBar
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -14,35 +15,38 @@ class Profile extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Center(
-            child: IconButton(
-          style: const ButtonStyle(
-              backgroundColor:
-                  WidgetStatePropertyAll<Color>(Color(0x00000000))),
-          icon: Image.asset('assets/image/mangueFlix.png'),
-          iconSize: 50,
-          onPressed: () {},
-        )),
+          child: IconButton(
+            style: const ButtonStyle(
+                backgroundColor:
+                    WidgetStatePropertyAll<Color>(Color(0x00000000))),
+            icon: Image.asset('assets/image/mangueFlix.png'),
+            iconSize: 50,
+            onPressed: () {},
+          ),
+        ),
         leading: IconButton(
-            onPressed: () {
-              Navigator.pop(
-                context,
-              );
-            },
-            icon: const Icon(Icons.arrow_back, color: Colors.red)),
+          onPressed: () {
+            Navigator.pop(
+              context,
+            );
+          },
+          icon: const Icon(Icons.arrow_back, color: Colors.red),
+        ),
       ),
       body: ListView(
-          children: const [
-            Infos(),
-            Padding(
-                padding: EdgeInsets.only(
+        children: const [
+          Infos(),
+          Padding(
+            padding: EdgeInsets.only(
               top: 30,
               bottom: 30,
-            )),
-            Bio(),
-            HistAval(),
-          ],
-        ),
-      
+            ),
+          ),
+          Bio(),
+          HistAval(),
+        ],
+      ),
+      bottomNavigationBar: const BottomNavBar(), // Adicionando o BottomNavBar global
     );
   }
 }
