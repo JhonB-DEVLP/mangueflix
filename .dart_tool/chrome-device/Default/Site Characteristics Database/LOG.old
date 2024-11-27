@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2024/11/26-20:29:01.126 40e4 Reusing MANIFEST C:\Users\Jhones\AppData\Local\Temp\flutter_tools.6c13915b\flutter_tools_chrome_device.cb444903\Default\Site Characteristics Database/MANIFEST-000001
 2024/11/26-20:29:01.130 40e4 Recovering log #10
 2024/11/26-20:29:01.130 40e4 Reusing old log C:\Users\Jhones\AppData\Local\Temp\flutter_tools.6c13915b\flutter_tools_chrome_device.cb444903\Default\Site Characteristics Database/000010.log 
@@ -5,3 +6,19 @@
 2024/11/26-20:29:01.131 40e4 Delete type=2 #4
 2024/11/26-20:29:01.131 40e4 Delete type=2 #6
 2024/11/26-20:29:01.131 40e4 Delete type=0 #6
+=======
+2024/11/26-23:34:15.229 92bc Log #3: 23 ops saved to Table #12 OK
+2024/11/26-23:34:19.489 92bc Archiving C:\Users\ma840\AppData\Local\Temp\flutter_tools.534bc250\flutter_tools_chrome_device.e0137729\Default\Site Characteristics Database/000003.log: OK
+2024/11/26-23:34:19.566 92bc Log #6: 3 ops saved to Table #13 OK
+2024/11/26-23:34:19.571 92bc Archiving C:\Users\ma840\AppData\Local\Temp\flutter_tools.534bc250\flutter_tools_chrome_device.e0137729\Default\Site Characteristics Database/000006.log: OK
+2024/11/26-23:34:19.639 92bc Log #10: 1 ops saved to Table #14 OK
+2024/11/26-23:34:19.640 92bc Archiving C:\Users\ma840\AppData\Local\Temp\flutter_tools.534bc250\flutter_tools_chrome_device.e0137729\Default\Site Characteristics Database/000010.log: OK
+2024/11/26-23:34:19.642 92bc Table #4: 23 entries OK
+2024/11/26-23:34:19.642 92bc Table #6: 23 entries OK
+2024/11/26-23:34:19.643 92bc Table #11: 2 entries OK
+2024/11/26-23:34:19.643 92bc Table #12: 23 entries OK
+2024/11/26-23:34:19.643 92bc Table #13: 3 entries OK
+2024/11/26-23:34:19.643 92bc Table #14: 1 entries OK
+2024/11/26-23:34:19.652 92bc Archiving C:\Users\ma840\AppData\Local\Temp\flutter_tools.534bc250\flutter_tools_chrome_device.e0137729\Default\Site Characteristics Database/MANIFEST-000001: OK
+2024/11/26-23:34:19.664 92bc **** Repaired leveldb C:\Users\ma840\AppData\Local\Temp\flutter_tools.534bc250\flutter_tools_chrome_device.e0137729\Default\Site Characteristics Database; recovered 6 files; 2144 bytes. Some data may have been lost. ****
+>>>>>>> 858e6c736deeaa94a973d20db8d705e5b64719d5

@@ -40,7 +40,7 @@ class _MySeriesState extends State<MySeries> {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back,
-              color: Color(0xFFE40624)), // Seta red
+              color: Color(0xFFE40624)), // Seta vermelha
           onPressed: () {
             Navigator.pop(context); // Retorna para a tela anterior
           },
@@ -144,7 +144,7 @@ class _MySeriesState extends State<MySeries> {
                                   starIndex < (voteAverage / 2).round()
                                       ? Icons.star
                                       : Icons.star_border,
-                                  color: const Color(0xFFE40624), // Cor red
+                                  color: const Color(0xFFE40624), // Cor vermelha
                                   size: 16,
                                 );
                               }),
