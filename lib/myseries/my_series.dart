@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mangueflix/custom_app_bar.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'dart:convert'; // Importando para manipular JSON
+import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 import '../details/info_serie.dart'; // Importando a InfoSerie para navegar até os detalhes
 
 class MySeries extends StatefulWidget {
@@ -20,16 +19,28 @@ class _MySeriesState extends State<MySeries> {
     _loadFavorites();
   }
 
+  // Função para carregar as séries favoritas do banco
   Future<void> _loadFavorites() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    List<String>? favorites = prefs.getStringList('favorites');
+    try {
+      var query = QueryBuilder<ParseObject>(ParseObject('SeriesFavoritas'));
+      var response = await query.query();
 
-    setState(() {
-      _favoriteSeries = favorites
-              ?.map((e) => Map<String, dynamic>.from(json.decode(e)))
-              .toList() ??
-          [];
-    });
+      if (response.success && response.results != null) {
+        setState(() {
+          // Convertendo os ParseObjects em Map para manipulação
+          _favoriteSeries = response.results!
+              .map((serie) => {
+                    'id': serie.get<String>('id'),
+                    'name': serie.get<String>('name'),
+                    'poster_path': serie.get<String>('poster_path'),
+                    'vote_average': serie.get<double>('vote_average'),
+                  })
+              .toList();
+        });
+      }
+    } catch (e) {
+      print('Erro ao carregar séries favoritas: $e');
+    }
   }
 
   @override
@@ -41,8 +52,7 @@ class _MySeriesState extends State<MySeries> {
           return Column(
             children: [
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 child: Align(
                   alignment: Alignment.centerLeft, // Alinha no canto esquerdo
                   child: const Text(
@@ -144,7 +154,6 @@ class _MySeriesState extends State<MySeries> {
           );
         },
       ),
-     
     );
   }
 }

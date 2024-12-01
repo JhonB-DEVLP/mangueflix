@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:mangueflix/details/avaliacao.dart';
 import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 import '../custom_app_bar.dart';
 
@@ -47,39 +47,57 @@ class _InfoSerieState extends State<InfoSerie> {
     }
   }
 
-  Future<void> _checkFavoriteStatus() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    List<String>? favorites = prefs.getStringList('favorites');
-    if (favorites!.contains(widget.serieId.toString())) {
-      setState(() {
-        _isFavorite = true;
-      });
+  
+
+// Função para salvar a série como favorita
+Future<void> _saveFavorite() async {
+  try {
+    // Crie uma instância da classe SeriesFavoritas
+    var favorite = ParseObject('SeriesFavoritas')
+      ..set('serieId', widget.serieId)
+      ..set('name', _serieData!['name'])
+      ..set('poster_path', _serieData!['poster_path'])
+      ..set('vote_average', _serieData!['vote_average']);
+
+    // Salve o objeto no Back4App
+    await favorite.save();
+  } catch (e) {
+    print('Erro ao salvar no banco: $e');
+  }
+}
+
+// Função para remover a série das favoritas
+Future<void> _removeFavorite() async {
+  try {
+    // Busca a série no banco
+    var query = QueryBuilder<ParseObject>(ParseObject('SeriesFavoritas'))
+      ..whereEqualTo('serieId', widget.serieId);
+    
+    var response = await query.query();
+    
+    if (response.success && response.results != null && response.results!.isNotEmpty) {
+      // Exclui o objeto encontrado
+      await response.results![0].delete();
     }
+  } catch (e) {
+    print('Erro ao excluir no banco: $e');
+  }
+}
+
+// Modificando o método _toggleFavorite para salvar e remover do banco
+Future<void> _toggleFavorite() async {
+  
+  if (_isFavorite) {
+    await _removeFavorite();  // Remove a série das favoritas
+  } else {
+    await _saveFavorite();    // Adiciona a série às favoritas
   }
 
-  Future<void> _toggleFavorite() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    List<String>? favorites = prefs.getStringList('favorites') ?? [];
+  setState(() {
+    _isFavorite = !_isFavorite; // Altera o estado do botão
+  });
+}
 
-    String serieDetails = json.encode({
-      'id': widget.serieId,
-      'name': _serieData!['name'],
-      'poster_path': _serieData!['poster_path'],
-      'vote_average': _serieData!['vote_average'],
-    });
-
-    if (_isFavorite) {
-      favorites
-          .removeWhere((item) => json.decode(item)['id'] == widget.serieId);
-    } else {
-      favorites.add(serieDetails);
-    }
-
-    await prefs.setStringList('favorites', favorites);
-    setState(() {
-      _isFavorite = !_isFavorite;
-    });
-  }
 
   Widget _buildRatingStars(double rating) {
     int filledStars = (rating / 2).floor();
@@ -108,6 +126,29 @@ class _InfoSerieState extends State<InfoSerie> {
       ],
     );
   }
+
+  Future<void> _checkFavoriteStatus() async {
+  try {
+    // Verifica se a série já está no banco
+    var query = QueryBuilder<ParseObject>(ParseObject('SeriesFavoritas'))
+      ..whereEqualTo('serieId', widget.serieId);
+    
+    var response = await query.query();
+
+    if (response.success && response.results != null && response.results!.isNotEmpty) {
+      setState(() {
+        _isFavorite = true; // A série está salva como favorita
+      });
+    } else {
+      setState(() {
+        _isFavorite = false; // A série não está salva
+      });
+    }
+  } catch (e) {
+    print('Erro ao verificar se é favorita: $e');
+  }
+}
+
 
  @override
 Widget build(BuildContext context) {

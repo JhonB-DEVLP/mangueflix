@@ -1,14 +1,17 @@
-2024/11/27-13:03:30.870 3768 Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.f8f25ed0\flutter_tools_chrome_device.ff0d44c1\Default\shared_proto_db/MANIFEST-000001
-2024/11/27-13:03:30.872 3768 Recovering log #23
-2024/11/27-13:03:30.874 3768 Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.f8f25ed0\flutter_tools_chrome_device.ff0d44c1\Default\shared_proto_db/000023.log 
-2024/11/27-13:03:30.874 3768 Delete type=0 #3
-2024/11/27-13:03:30.875 3768 Delete type=0 #4
-2024/11/27-13:03:30.875 3768 Delete type=0 #7
-2024/11/27-13:03:30.875 3768 Delete type=2 #8
-2024/11/27-13:03:30.875 3768 Delete type=0 #10
-2024/11/27-13:03:30.875 3768 Delete type=2 #11
-2024/11/27-13:03:30.875 3768 Delete type=0 #13
-2024/11/27-13:03:30.875 3768 Delete type=2 #14
-2024/11/27-13:03:30.934 3768 Delete type=0 #16
-2024/11/27-13:03:30.934 3768 Delete type=2 #17
-2024/11/27-13:03:30.935 3768 Delete type=0 #19
+2024/12/01-01:50:03.955 34c0 Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.ff132578\flutter_tools_chrome_device.ab5a4dd2\Default\shared_proto_db/MANIFEST-000001
+2024/12/01-01:50:03.956 34c0 Recovering log #28
+2024/12/01-01:50:03.956 34c0 Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.ff132578\flutter_tools_chrome_device.ab5a4dd2\Default\shared_proto_db/000028.log 
+2024/12/01-01:50:03.957 34c0 Delete type=0 #3
+2024/12/01-01:50:03.957 34c0 Delete type=0 #4
+2024/12/01-01:50:03.957 34c0 Delete type=0 #7
+2024/12/01-01:50:03.957 34c0 Delete type=2 #8
+2024/12/01-01:50:03.957 34c0 Delete type=0 #10
+2024/12/01-01:50:03.957 34c0 Delete type=2 #11
+2024/12/01-01:50:03.957 34c0 Delete type=0 #13
+2024/12/01-01:50:03.958 34c0 Delete type=2 #14
+2024/12/01-01:50:03.958 34c0 Delete type=0 #16
+2024/12/01-01:50:03.958 34c0 Delete type=2 #17
+2024/12/01-01:50:03.958 34c0 Delete type=0 #19
+2024/12/01-01:50:03.958 34c0 Delete type=0 #23
+2024/12/01-01:50:03.958 34c0 Delete type=0 #26
+2024/12/01-01:50:03.958 34c0 Delete type=2 #27

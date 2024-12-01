@@ -1,14 +1,19 @@
-2024/11/27-11:57:42.846 eb8 Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.7ee741e1\flutter_tools_chrome_device.34e96e4a\Default\shared_proto_db/MANIFEST-000001
-2024/11/27-11:57:42.847 eb8 Recovering log #23
-2024/11/27-11:57:42.849 eb8 Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.7ee741e1\flutter_tools_chrome_device.34e96e4a\Default\shared_proto_db/000023.log 
-2024/11/27-11:57:42.850 eb8 Delete type=0 #3
-2024/11/27-11:57:42.851 eb8 Delete type=0 #4
-2024/11/27-11:57:42.851 eb8 Delete type=0 #7
-2024/11/27-11:57:42.851 eb8 Delete type=2 #8
-2024/11/27-11:57:42.851 eb8 Delete type=0 #10
-2024/11/27-11:57:42.851 eb8 Delete type=2 #11
-2024/11/27-11:57:42.852 eb8 Delete type=0 #13
-2024/11/27-11:57:42.852 eb8 Delete type=2 #14
-2024/11/27-11:57:42.853 eb8 Delete type=0 #16
-2024/11/27-11:57:42.853 eb8 Delete type=2 #17
-2024/11/27-11:57:42.854 eb8 Delete type=0 #19
+2024/12/01-01:47:31.905 37e8 Reusing MANIFEST C:\Users\gabri\AppData\Local\Temp\flutter_tools.3a8ad560\flutter_tools_chrome_device.b4d58a85\Default\shared_proto_db/MANIFEST-000001
+2024/12/01-01:47:31.906 37e8 Recovering log #26
+2024/12/01-01:47:31.908 37e8 Reusing old log C:\Users\gabri\AppData\Local\Temp\flutter_tools.3a8ad560\flutter_tools_chrome_device.b4d58a85\Default\shared_proto_db/000026.log 
+2024/12/01-01:47:31.908 37e8 Delete type=0 #3
+2024/12/01-01:47:31.908 37e8 Delete type=0 #4
+2024/12/01-01:47:31.909 37e8 Delete type=0 #7
+2024/12/01-01:47:31.909 37e8 Delete type=2 #8
+2024/12/01-01:47:31.909 37e8 Delete type=0 #10
+2024/12/01-01:47:31.909 37e8 Delete type=2 #11
+2024/12/01-01:47:31.909 37e8 Delete type=0 #13
+2024/12/01-01:47:31.915 37e8 Delete type=2 #14
+2024/12/01-01:47:31.915 37e8 Delete type=0 #16
+2024/12/01-01:47:31.916 37e8 Delete type=2 #17
+2024/12/01-01:47:31.916 37e8 Delete type=0 #19
+2024/12/01-01:47:31.916 37e8 Delete type=0 #23
+2024/12/01-01:47:31.916 37e8 Delete type=2 #27
+2024/12/01-01:47:51.988 530 Level-0 table #29: started
+2024/12/01-01:47:51.993 530 Level-0 table #29: 135217 bytes OK
+2024/12/01-01:47:51.995 530 Delete type=0 #26
