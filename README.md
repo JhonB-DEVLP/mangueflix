@@ -7,6 +7,7 @@ MangueFlix é um aplicativo inovador que combina entretenimento e interatividade
 O desenvolvimento do MangueFlix foi realizado com as seguintes tecnologias:
 
 - **Flutter** - Framework para desenvolvimento mobile cross-platform
+- [The Movie Database (TMDB)](https://developer.themoviedb.org/reference/intro/getting-started) - API utilizada para obter informações sobre as séries
 - **Back4App** - Backend baseado no Parse para armazenamento e gerenciamento de dados
 - **Figma** - Utilizado para prototipação e design da interface
 
@@ -17,7 +18,7 @@ O design do aplicativo foi criado no **Figma**, garantindo uma experiência de u
 ## 📌 Funcionalidades
 
 - 📌 Avaliação de séries com notas e comentários
-- 🔍 Visualizaçãoo de séries divididas em filtros personalizados
+- 🔍 Visualização de informações de séries
 - 👥 Perfil do usuário com histórico de avaliações e preferências
 - 📰 Seção de destaques com conteúdos em alta
 
